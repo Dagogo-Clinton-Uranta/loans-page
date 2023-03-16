@@ -1,0 +1,122 @@
+.emebenefits__container {
+    display:grid;
+    grid-template-columns: 1fr 1fr ;
+    gap:2rem;
+  width:77% !important;
+    box-shadow: var(--feature-shadow);
+    -webkit-box-shadow: var(--feature-shadow);
+    -moz-box-shadow: var(--feature-shadow);
+    
+}
+
+.emebenefits__container  > div {
+  background: var(--color-bg-white);
+  padding:2rem 2rem;
+  
+  
+ /* border:  var(--separator-line);*/
+  transition:var(--transition);
+ 
+  /*box-shadow: var(--feature-shadow);
+-webkit-box-shadow: var(--feature-shadow);
+-moz-box-shadow: var(--feature-shadow);*/
+}
+
+
+.emebenefits__container  > div:hover {
+    background: transparent;
+    /*border-color:var(--color-primary-variant);*/
+    
+    cursor:default;
+}
+
+.emebenefits__container > div h3 {
+  text-align:center;
+  margin-bottom: 2rem;
+  color:var(--color-primary);
+}
+
+.emebenefits__container > div img {
+    border-radius: 2%;
+    
+  }
+
+.emebenefits__content {
+   display:grid;
+   grid-template-columns: 1fr 1fr;
+   row-gap:2rem;
+}
+
+.emebenefits__details {
+    display:flex;
+    gap:1rem;
+
+}
+
+.emebenefits__details-icon {
+    margin-top: 6px;
+    color:var(--color-primary);
+
+}
+
+
+.btn-pos {
+   margin-top: 5%;
+}
+
+
+/*============== MEDIA QUERIES (KINDA LARGE DEVICES) ======================= */
+
+@media screen and (max-width:1500px) {
+    .emebenefits__container {
+        grid-template-columns: 1fr;
+
+    }
+}
+
+
+/*============== MEDIA QUERIES (MEDIUM DEVICES) ======================= */
+
+@media screen and (max-width:1024px) {
+    .emebenefits__container {
+        grid-template-columns: 1fr;
+
+    }
+
+    .emebenefits__container > div {
+        width:80%;
+        padding:2rem;
+        margin:0 auto;
+    }
+
+    .emebenefits__content {
+        padding: 1rem;
+    }
+}
+
+
+/*============== MEDIA QUERIES (SMALL DEVICES) ======================= */
+
+@media screen and (max-width:600px) {
+    .emebenefits__container {
+        
+        gap: 1rem;
+
+    }
+
+    .emebenefits__container > div {
+        width:100%;
+        padding:2rem 1rem;
+
+    }
+
+
+
+
+}
+
+ 
+
+
+
+

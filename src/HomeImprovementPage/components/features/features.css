@@ -1,0 +1,138 @@
+.features__container {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:2rem;
+}
+
+.features__container  > div {
+  background: var(--color-bg-white);
+  padding:2.4rem 5rem;
+  
+  border:  var(--separator-line);
+  transition:var(--transition);
+ 
+  box-shadow: var(--feature-shadow);
+-webkit-box-shadow: var(--feature-shadow);
+-moz-box-shadow: var(--feature-shadow);
+}
+
+
+.features__container  > div:hover {
+    background: transparent;
+    border-color:var(--color-primary-variant);
+    
+    cursor:default;
+}
+
+.features__container > div h3 {
+  text-align:center;
+  margin-bottom: 2rem;
+  color:var(--color-primary);
+}
+
+
+.features__content {
+   display:grid;
+   grid-template-columns: 1fr 1fr;
+   row-gap:2rem;
+}
+
+.features__details {
+    display:flex;
+    gap:1rem;
+
+}
+
+.features__details-icon {
+    margin-top: 6px;
+    color:var(--color-primary);
+
+}
+
+
+.btn-pos {
+   margin-top: 5%;
+}
+
+.iconContainer{
+    color:var(--color-primary-variant);
+    font-size: 2rem;
+    background-color: var(--color-white);
+    /*box shape*/
+    border: var(--separator-line);
+    width: max-content;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+     /*box shape*/
+
+     /*box position*/
+     position: relative;
+     top:-17%;
+     left:-20%;
+     z-index:100;
+     /*box position*/
+}
+
+
+/*============== MEDIA QUERIES (KINDA LARGE DEVICES) ======================= */
+
+@media screen and (max-width:1500px) {
+    .features__container {
+        grid-template-columns: 1fr;
+
+    }
+
+    .iconContainer{
+       margin: 0 auto;
+       top:-5%;
+       left:0%;
+    }
+}
+
+
+/*============== MEDIA QUERIES (MEDIUM DEVICES) ======================= */
+
+@media screen and (max-width:1024px) {
+    .features__container {
+        grid-template-columns: 1fr;
+
+    }
+
+    .features__container > div {
+        width:80%;
+        padding:2rem;
+        margin:0 auto;
+    }
+
+    .features__content {
+        padding: 1rem;
+    }
+}
+
+
+/*============== MEDIA QUERIES (SMALL DEVICES) ======================= */
+
+@media screen and (max-width:600px) {
+    .features__container {
+        
+        gap: 1rem;
+
+    }
+
+    .features__container > div {
+        width:100%;
+        padding:2rem 1rem;
+
+    }
+
+
+
+
+}
+
+ 
+
+
+
+

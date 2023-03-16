@@ -1,0 +1,96 @@
+.tableShrinker3 table {
+    
+    /*border-collapse: collapse;*/
+    margin: 0;
+    padding: 0;
+    /*width: 100%;*/
+    table-layout: fixed;
+    
+  
+
+    box-shadow: var(--feature-shadow);
+    -webkit-box-shadow: var(--feature-shadow);
+    -moz-box-shadow: var(--feature-shadow);
+  }
+
+  .tableShrinker3{
+   width:80%;
+   margin: 0 auto;
+  }
+  
+  .tableShrinker3 table caption {
+    display: none;
+  }
+  
+  .tableShrinker3 table tr {
+    background-color: var(--color-white);
+    border: var(--separator-line);
+    padding: .35em;
+  }
+  
+  .tableShrinker3 table th,
+  .tableShrinker3 table td {
+    padding: 1rem;
+    text-align: left;
+    border: var(--separator-line);
+  }
+  
+  .tableShrinker3 table th {
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    
+  }
+  
+  @media screen and (max-width: 600px) {
+    .tableShrinker3 table {
+      border: 0;
+
+    }
+  
+    .tableShrinker3 table caption {
+      font-size: 1.3em;
+    }
+    
+    .tableShrinker3 table thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+    
+    .tableShrinker3 table tr {
+      border-bottom: 3px solid #ddd;
+      display: block;
+      margin-bottom: .625em;
+    }
+    
+    .tableShrinker3 table td {
+      border-bottom: 1px solid #ddd;
+      display: block;
+      font-size: .8em;
+      text-align: left;
+    }
+    
+    .tableShrinker3 table td::before {
+      /*
+      * aria-label has no advantage, it won't be read inside a table
+      content: attr(aria-label);
+      */
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+
+    
+    
+    table td:last-child {
+      border-bottom: 0;
+    }
+  }

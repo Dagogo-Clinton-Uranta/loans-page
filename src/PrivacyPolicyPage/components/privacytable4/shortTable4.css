@@ -1,0 +1,120 @@
+.tableShrinker4 table {
+    
+    /*border-collapse: collapse;*/
+    margin: 0;
+    padding: 0;
+    /*width: 100%;*/
+    table-layout: fixed;
+    
+
+
+    box-shadow: var(--feature-shadow);
+    -webkit-box-shadow: var(--feature-shadow);
+    -moz-box-shadow: var(--feature-shadow);
+  }
+
+  .tableShrinker4{
+   width:80%;
+   margin: 0 auto;
+  }
+  
+  .tableShrinker4 table caption {
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
+  }
+  
+  .tableShrinker4 table tr {
+    background-color: var(--color-white);
+    border: var(--separator-line);
+    padding: .35em;
+  }
+  
+  .tableShrinker4 table th,
+  .tableShrinker4 table td {
+    padding: 2rem;
+    text-align: left;
+    border: var(--separator-line);
+  }
+
+  .tableShrinker4 li {
+    list-style:circle;
+    margin-left: 1.6rem;
+    margin-bottom:0.6rem;
+  }
+  
+  .tableShrinker4 table th {
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    
+  }
+  
+  @media screen and (max-width: 600px) {
+    .tableShrinker4 table {
+      border: 0;
+
+    }
+  
+    .tableShrinker4 table caption {
+      font-size: 1.3em;
+    }
+    
+    .tableShrinker4 table thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+    
+    .tableShrinker4 table tr {
+      border-bottom: 3px solid #ddd;
+      display: block;
+      margin-bottom: .625em;
+    }
+    
+    .tableShrinker4 table td {
+      border-bottom: 1px solid #ddd;
+      display: block;
+      font-size: .8em;
+      text-align: right;
+    }
+    
+    .tableShrinker1 table td::before {
+      /*
+      * aria-label has no advantage, it won't be read inside a table
+      content: attr(aria-label);
+      */
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    
+    table td:last-child {
+      border-bottom: 0;
+    }
+  }
+
+
+  .tableShrinker4 table th,
+  .tableShrinker4 table td {
+    padding: 2em;
+    text-align: left;
+    border: var(--separator-line);
+  }
+
+  @media screen  and (max-width:1000px) {
+    
+   
+
+    .tableShrinker4 table th,
+    .tableShrinker4 table td {
+      
+      text-align: left;
+    
+    }
+  }

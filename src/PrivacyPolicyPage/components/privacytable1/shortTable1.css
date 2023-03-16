@@ -1,0 +1,116 @@
+.tableShrinker1 table {
+    
+    /*border-collapse: collapse;*/
+    margin: 0;
+    padding: 0;
+    /*width: 100%;*/
+   /* table-layout: fixed;*/
+    
+
+
+    box-shadow: var(--feature-shadow);
+    -webkit-box-shadow: var(--feature-shadow);
+    -moz-box-shadow: var(--feature-shadow);
+  }
+
+  .tableShrinker1{
+   width:80%;
+   margin: 0 auto;
+  }
+  
+
+  .tableShrinker1 li{
+    list-style:circle;
+    margin-left:25px;
+  }
+
+  .tableShrinker1 table caption {
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
+  }
+  
+  .tableShrinker1 table tr {
+    background-color: var(--color-white);
+    border: var(--separator-line);
+    padding: .35em;
+  }
+  
+  .tableShrinker1 table th
+   {
+    padding: .625em;
+    text-align: center;
+    border: var(--separator-line);
+  }
+
+ 
+  .tableShrinker1 table td {
+    padding: .625em;
+    text-align: left;
+    border: var(--separator-line);
+  }
+  
+  .tableShrinker1 table th {
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    
+  }
+  
+  @media screen and (max-width: 600px) {
+    .tableShrinker1 table {
+      border: 0;
+
+    }
+  
+    .tableShrinker1 table caption {
+      font-size: 1.3em;
+    }
+    
+    .tableShrinker1 table thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+    
+    .tableShrinker1 table tr {
+      border-bottom: 3px solid #ddd;
+      display: block;
+      margin-bottom: .625em;
+    }
+    
+    .tableShrinker1 table td {
+      border-bottom: 1px solid #ddd;
+      display: block;
+      font-size: .8em;
+      text-align: right;
+    }
+    
+    .tableShrinker1 table td::before {
+      /*
+      * aria-label has no advantage, it won't be read inside a table
+      content: attr(aria-label);
+      */
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    
+    table td:last-child {
+      border-bottom: 0;
+    }
+  }
+
+  @media screen  and (max-width:1000px) {
+    
+   
+
+    .tableShrinker1 table td {
+      text-align: left;
+    }
+  }
