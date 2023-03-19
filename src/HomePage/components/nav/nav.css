@@ -1,5 +1,5 @@
 nav {
-    background: var(--color-bg);
+    background: var(--color-bg-nav) !important;
     width:100% /*max-content*/; /*max content fits the width of the content itself*/
     display: block;
     padding:0.7rem 1.7rem;

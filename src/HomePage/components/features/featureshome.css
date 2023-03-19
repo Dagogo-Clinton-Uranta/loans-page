@@ -1,10 +1,20 @@
-.faq__container {
+ #featureshome {
+    margin-top: 2.5rem;
+ }
+
+
+
+
+.featureshome__container {
     display:grid;
-    grid-template-columns: 1fr ;
+    grid-template-columns: 1fr 1fr 1fr;
     gap:2rem;
+    margin-top: 3rem;
+    
+   
 }
 
-/*.faq__container  > div {
+.featureshome__container  > div {
   background: var(--color-bg-white);
   padding:2.4rem 5rem;
   
@@ -14,39 +24,36 @@
   box-shadow: var(--feature-shadow);
 -webkit-box-shadow: var(--feature-shadow);
 -moz-box-shadow: var(--feature-shadow);
-}*/
+}
 
 
-.faq__container  > div:hover {
+.featureshome__container  > div:hover {
     background: transparent;
-   /* border-color:var(--color-primary-variant);*/
+    border-color:var(--color-primary-variant);
     
     cursor:default;
 }
 
-
-
-
-.faq__container > div h3 {
+.featureshome__container > div h3 {
   text-align:center;
   margin-bottom: 2rem;
   color:var(--color-primary);
 }
 
 
-.faq__content {
+.featureshome__content {
    display:grid;
    grid-template-columns: 1fr 1fr;
    row-gap:2rem;
 }
 
-.faq__details {
+.featureshome__details {
     display:flex;
     gap:1rem;
 
 }
 
-.faq__details-icon {
+.featureshome__details-icon {
     margin-top: 6px;
     color:var(--color-primary);
 
@@ -73,38 +80,17 @@
      position: relative;
      top:-17%;
      left:-20%;
-     z-index:100;
+     z-index:1;
      /*box position*/
-}
-
-.selected__accent {
-    
-        background-color:blue;
-        width:1px;
-        height:23px;
-        position:absolute;
-        top:27%;
-        left:0%;
-        z-index:20;
-           
 }
 
 
 /*============== MEDIA QUERIES (KINDA LARGE DEVICES) ======================= */
 
 @media screen and (max-width:1500px) {
-   
-    .selected__accent {
-    
-        top:22%;
-        left:0%;
-            
-}
-  
-  
-    .faq__container {
+    .featureshome__container {
         grid-template-columns: 1fr;
-
+        margin-top: 1rem;
     }
 
     .iconContainer{
@@ -118,23 +104,18 @@
 /*============== MEDIA QUERIES (MEDIUM DEVICES) ======================= */
 
 @media screen and (max-width:1024px) {
-    .faq__container {
+    .featureshome__container {
         grid-template-columns: 1fr;
 
     }
 
-    .selected__accent {
-       display: none;
-            
-}
-
-    .faq__container > div {
+    .featureshome__container > div {
         width:80%;
         padding:2rem;
         margin:0 auto;
     }
 
-    .faq__content {
+    .featureshome__content {
         padding: 1rem;
     }
 }
@@ -143,20 +124,20 @@
 /*============== MEDIA QUERIES (SMALL DEVICES) ======================= */
 
 @media screen and (max-width:600px) {
-    .faq__container {
+    .featureshome__container {
         
         gap: 1rem;
 
     }
 
-    .faq__container > div {
+    .featureshome__container > div {
         width:100%;
         padding:2rem 1rem;
 
     }
 
 
- 
+
 
 }
 

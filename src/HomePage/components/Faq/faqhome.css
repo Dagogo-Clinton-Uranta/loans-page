@@ -1,10 +1,10 @@
-.features__container {
+.faqhome__container {
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap:2rem;
+    grid-template-columns: 1fr ;
+    gap:1.5rem;
 }
 
-.features__container  > div {
+/*.faqhome__container  > div {
   background: var(--color-bg-white);
   padding:2.4rem 5rem;
   
@@ -14,36 +14,39 @@
   box-shadow: var(--feature-shadow);
 -webkit-box-shadow: var(--feature-shadow);
 -moz-box-shadow: var(--feature-shadow);
-}
+}*/
 
 
-.features__container  > div:hover {
+.faqhome__container  > div:hover {
     background: transparent;
-    border-color:var(--color-primary-variant);
+   /* border-color:var(--color-primary-variant);*/
     
     cursor:default;
 }
 
-.features__container > div h3 {
+
+
+
+.faqhome__container > div h3 {
   text-align:center;
   margin-bottom: 2rem;
   color:var(--color-primary);
 }
 
 
-.features__content {
+.faqhome__content {
    display:grid;
    grid-template-columns: 1fr 1fr;
    row-gap:2rem;
 }
 
-.features__details {
+.faqhome__details {
     display:flex;
     gap:1rem;
 
 }
 
-.features__details-icon {
+.faqhome__details-icon {
     margin-top: 6px;
     color:var(--color-primary);
 
@@ -74,11 +77,32 @@
      /*box position*/
 }
 
+.selected__accent {
+    
+        background-color:blue;
+        width:1px;
+        height:23px;
+        position:absolute;
+        top:27%;
+        left:0%;
+        z-index:20;
+           
+}
+
 
 /*============== MEDIA QUERIES (KINDA LARGE DEVICES) ======================= */
 
 @media screen and (max-width:1500px) {
-    .features__container {
+   
+    .selected__accent {
+    
+        top:22%;
+        left:0%;
+            
+}
+  
+  
+    .faqhome__container {
         grid-template-columns: 1fr;
 
     }
@@ -94,18 +118,23 @@
 /*============== MEDIA QUERIES (MEDIUM DEVICES) ======================= */
 
 @media screen and (max-width:1024px) {
-    .features__container {
+    .faqhome__container {
         grid-template-columns: 1fr;
-
+        gap:0rem;
     }
 
-    .features__container > div {
+    .selected__accent {
+       display: none;
+            
+}
+
+    .faqhome__container > div {
         width:80%;
         padding:2rem;
         margin:0 auto;
     }
 
-    .features__content {
+    .faqhome__content {
         padding: 1rem;
     }
 }
@@ -114,20 +143,20 @@
 /*============== MEDIA QUERIES (SMALL DEVICES) ======================= */
 
 @media screen and (max-width:600px) {
-    .features__container {
+    .faqhome__item {
         
-        gap: 1rem;
-
+       margin-top: -8rem;
+     
     }
 
-    .features__container > div {
+    .faqhome__container > div {
         width:100%;
-        padding:2rem 1rem;
+       /* padding:2rem 1rem;*/
 
     }
 
 
-
+ 
 
 }
 

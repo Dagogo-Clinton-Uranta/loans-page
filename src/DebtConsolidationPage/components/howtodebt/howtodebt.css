@@ -6,7 +6,8 @@
     box-shadow: var(--feature-shadow);
     -webkit-box-shadow: var(--feature-shadow);
     -moz-box-shadow: var(--feature-shadow);
-    
+    border: var(--separator-line);
+    border-radius: 1rem;
 }
 
 .howtodebt__container  > div {

@@ -22,7 +22,7 @@
 
 .personal__headeremergencyknow p{
 
-    padding:5rem;
+    padding:1rem;
     border:  var(--separator-line);
     transition:var(--transition);
    

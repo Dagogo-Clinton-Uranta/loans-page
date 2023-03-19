@@ -9,7 +9,7 @@ const Header = () => {
           <center className='consentTitleHeader'>
          <h1>Ad Disclosure Page</h1>
 
-         <p>
+         <p style={{fontSize:"0.9rem"}}>
          We strongly recommend you carefully read this entire page
           before using our service so you can fully understand our 
           advertising practices. At the very least, please read the

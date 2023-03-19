@@ -23,8 +23,7 @@ explainer {
 
 .personal__headerExplainer p{
 
-    padding:5rem;
-    border:  var(--separator-line);
+    padding:5rem;border:  var(--separator-line);
     transition:var(--transition);
    
     box-shadow: var(--feature-shadow);

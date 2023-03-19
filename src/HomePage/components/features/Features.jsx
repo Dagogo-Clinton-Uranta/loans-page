@@ -1,5 +1,5 @@
 import React from 'react'
-import './features.css'
+import './featureshome.css'
 import { BsFillPatchCheckFill } from 'react-icons/bs'
 import {BsWatch} from 'react-icons/bs'
 import {FaLaptopCode,FaLock} from 'react-icons/fa'
@@ -7,19 +7,20 @@ import {FaLaptopCode,FaLock} from 'react-icons/fa'
 
 const Features = () => {
   return (
-    <section id='features'>
+    <section id='featureshome'>
    
-   <h2>Why Poorcred QuickLoans</h2>
+   
 
-   <center>
+   <center style={{maxWidth:"70%", margin:"0 auto"}}>
+   <h2>Why Poorcred QuickLoans</h2>
    You can manage leads and sales with our tracking software,
     administer your affiliate program automatically, 
     and integrate PayPal seamlessly.
    </center>
    
-   <div className="container features__container">
+   <div className="container featureshome__container">
    
-      <div className="features__backend">
+      <div className="featureshome__backend">
         <div className='iconContainer'>
         <FaLock/>
         </div>
@@ -33,7 +34,7 @@ const Features = () => {
        
       </div>
 
-       <div className="features__backend">
+       <div className="featureshome__backend">
        <div className='iconContainer'>
         <FaLaptopCode/>
         </div>
@@ -47,7 +48,7 @@ const Features = () => {
        </p>
        </div>
 
-       <div className="features__backend">
+       <div className="featureshome__backend">
        <div className='iconContainer'>
         <BsWatch/>
         </div>

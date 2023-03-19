@@ -4,21 +4,9 @@ import './explainer.css'
 
 const Explainer = () => {
   return (
-    <explainer>
-    <div className="container aboutus__header__container">
-      {/*<h5>Hello I'm</h5>
-      <h1>Amber Roe</h1>
-      <h5 className="text-light">Artist and Set Designer</h5>
-     <CTA/> 
-     <HeaderSocials/>
-
-     <div className="me">
-      <img src={ME} alt="Amber profile photo" />
-     </div>
-   
-    <a href="#contact" className="scroll__down">Scroll Down</a>
-  */}
-
+    <div id="aboutexplainer">
+    <div className="container explainer__header__container">
+     
       <div className="aboutus__headerExplainer">
       
 
@@ -49,7 +37,7 @@ const Explainer = () => {
      
 
     </div>
-    </explainer>
+    </div>
   )
 }
 

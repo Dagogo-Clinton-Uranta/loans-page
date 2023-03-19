@@ -1,13 +1,13 @@
-explainer {
+#aboutexplainer {
    /* height:100vh;
     padding-top: 7rem;
     overflow:visible;*/
-     padding-top: 5rem;
+     display: block;
    
   
 }
 
-.aboutus__header__container {
+.explainer__header__container {
     text-align: left;
     height:100%;
     position:relative;
@@ -163,8 +163,9 @@ z-index: 0;
 
 @media screen and (max-width:1024px) {
    
- 
-
+   /* .explainer__header__container {
+     
+    }*/
 
  }
  
@@ -174,7 +175,9 @@ z-index: 0;
  
  @media screen and (max-width:600px) {
      
-   
+   /* .explainer__header__container {
+        margin-top: 6rem;
+    }*/
     
      .header__socials, .scroll__down{
         display:none;

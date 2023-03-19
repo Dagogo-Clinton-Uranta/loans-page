@@ -178,7 +178,9 @@ z-index: 0;
  
  @media screen and (max-width:600px) {
      
-    
+    .aboutus__header__container{
+        display: block !important;
+    }
     
      .header__socials, .scroll__down{
         display:none;

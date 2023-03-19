@@ -9,7 +9,7 @@ const Header = () => {
           <center className='consentTitleHeader'>
          <h1>Rates & Fees</h1>
 
-         <p>
+         <p style={{fontSize:"0.9rem"}}>
          Only a lender or lending partner can provide you with 
          information on their rates and terms. This will typically
           happen shortly after your loan request is complete, and 

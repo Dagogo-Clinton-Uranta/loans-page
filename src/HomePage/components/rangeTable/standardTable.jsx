@@ -8,7 +8,7 @@ const standardTable = () =>{
         <>
 
 <table>
- 
+<caption>Example of a Personal Loan APR Range</caption>
   <thead>
     <tr>
       <th scope="col">Term</th>
@@ -21,45 +21,45 @@ const standardTable = () =>{
   </thead>
   <tbody>
     <tr>
-      <td data-label="Account">2 Years</td>
-      <td data-label="Due Date">$8,500</td>
-      <td data-label="Amount">6.99%</td>
-      <td data-label="Period">45</td>
-      <td>$8,500</td>
-      <td>$30,000</td>
+      <td data-label="Term">2 Years</td>
+      <td data-label="Loan Amount">$8,500</td>
+      <td data-label="Rate(APR)">6.99%</td>
+      <td data-label="Payments">45</td>
+      <td data-label="Montly Pay">$8,500</td>
+      <td data-label="Total Pay">$30,000</td>
     </tr>
     <tr>
-      <td scope="row" data-label="Account">3 Years</td>
-      <td data-label="Due Date">$8,500</td>
-      <td data-label="Amount">6.99%</td>
-      <td data-label="Period">26</td>
-      <td>$8,500</td>
-      <td>$30,000</td>
+      <td scope="row" data-label="Term">3 Years</td>
+      <td data-label="Loan Amount">$8,500</td>
+      <td data-label="Rate(APR)">6.99%</td>
+      <td data-label="Payments">26</td>
+      <td data-label="Montly Pay">$8,500</td>
+      <td data-label="Total Pay">$30,000</td>
     </tr>
     <tr>
-      <td scope="row" data-label="Account">4 Years</td>
-      <td data-label="Due Date">$8,500</td>
-      <td data-label="Amount">6.99%</td>
-      <td data-label="Period">10</td>
-      <td>$8,500</td>
-      <td>$30,000</td>
+      <td scope="row" data-label="Term">4 Years</td>
+      <td data-label="Loan Amount">$8,500</td>
+      <td data-label="Rate(APR)">6.99%</td>
+      <td data-label="Payments">10</td>
+      <td data-label="Montly Pay">$8,500</td>
+      <td data-label="Total Pay">$30,000</td>
     </tr>
     <tr>
-      <td scope="row" data-label="Acount">5 Years</td>
-      <td data-label="Due Date">$8,500</td>
-      <td data-label="Amount">6.99%</td>
-      <td data-label="Period">5</td>
-      <td>$8,500</td>
-      <td>$30,000</td>
+      <td scope="row" data-label="Term">5 Years</td>
+      <td data-label="Loan Amount">$8,500</td>
+      <td data-label="Rate(APR)">6.99%</td>
+      <td data-label="Payments">5</td>
+      <td  data-label="Montly Pay">$8,500</td>
+      <td data-label="Total Pay">$30,000</td>
     </tr>
 
     <tr>
-      <td scope="row" data-label="Acount">6 Years</td>
-      <td data-label="Due Date">$8,500</td>
-      <td data-label="Amount">6.99%</td>
-      <td data-label="Period">5</td>
-      <td>$8,500</td>
-      <td>$30,000</td>
+      <td scope="row" data-label="Term">6 Years</td>
+      <td data-label="Loan Amount">$8,500</td>
+      <td data-label="Rate(APR)">6.99%</td>
+      <td data-label="Payments">5</td>
+      <td data-label="Montly Pay">$8,500</td>
+      <td data-label="Total Pay">$30,000</td>
     </tr>
   </tbody>
 </table>

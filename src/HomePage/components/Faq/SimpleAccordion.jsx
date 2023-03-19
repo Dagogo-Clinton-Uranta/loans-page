@@ -29,7 +29,7 @@ export default function SimpleAccordion({header,body}) {
   return (
     <div style={{position:"relative"}}>
         <div className={on && "selected__accent"} ></div>
-      <Accordion sx={{padding:"20px",borderRadius:"20px"}}>
+      <Accordion sx={{marginTop:{xs:"-2.5rem", md:"-1.5rem",lg:"0rem"},padding:"20px",borderRadius:"20px"}}>
         <AccordionSummary onClick = {()=>{setOn(!on)}}
           expandIcon={<GoTriangleDown />}
           aria-controls="panel1a-content"

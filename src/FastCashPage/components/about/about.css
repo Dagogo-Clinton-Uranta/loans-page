@@ -182,7 +182,7 @@
     .about__container {
        flex-direction: column;
        gap:4rem;
-     margin-top: 35rem !important;
+    /* margin-top: 35rem !important;*/
         
     }
  
@@ -203,7 +203,7 @@
 
       .about__container {
       
-      margin-top: 40rem !important;
+      /*margin-top: 40rem !important;*/
          
      }
    

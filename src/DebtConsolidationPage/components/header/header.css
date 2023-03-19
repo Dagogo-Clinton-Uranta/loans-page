@@ -9,7 +9,7 @@ header {
      var(--color-bg) ,var(--color-white)
     ) ;
    z-index: -100;
-   margin-bottom: 14rem;
+   /*margin-bottom: 14rem;*/
 }
 
 .header__container-1{

@@ -20,40 +20,46 @@ const shortTable = () =>{
   </thead>
   <tbody>
     <tr>
-      <td data-label="Account">2 Years</td>
-      <td data-label="Due Date">$8,500</td>
-      <td data-label="Amount">6.99%</td>
-      <td data-label="Period">45</td>
+      <td data-label="Credit Score">2 Years</td>
+      <td data-label="Amount">$8,500</td>
+      <td data-label="Rate(APR)">6.99%</td>
+      <td data-label="Total Paid">45</td>
      
     </tr>
     <tr>
-      <td scope="row" data-label="Account">3 Years</td>
-      <td data-label="Due Date">$8,500</td>
-      <td data-label="Amount">6.99%</td>
-      <td data-label="Period">26</td>
+      <td scope="row" data-label="Credit Score">3 Years</td>
+      <td data-label="Amount">$8,500</td>
+      <td data-label="Rate(APR)">6.99%</td>
+      <td data-label="Total Paid">26</td>
       
     </tr>
     <tr>
-      <td scope="row" data-label="Account">4 Years</td>
-      <td data-label="Due Date">$8,500</td>
-      <td data-label="Amount">6.99%</td>
-      <td data-label="Period">10</td>
+      <td scope="row" data-label="Credit Score">4 Years</td>
+      <td data-label="Amount">$8,500</td>
+      <td data-label="Rate(APR)">6.99%</td>
+      <td data-label="Total Paid">10</td>
      
     </tr>
     <tr>
-      <td scope="row" data-label="Acount">5 Years</td>
-      <td data-label="Due Date">$8,500</td>
-      <td data-label="Amount">6.99%</td>
-      <td data-label="Period">5</td>
+      <td scope="row" data-label="Credit Score">5 Years</td>
+      <td data-label="Amount">$8,500</td>
+      <td data-label="Rate(APR)">6.99%</td>
+      <td data-label="Total Paid">5</td>
       
     </tr>
 
     <tr>
-      <td scope="row" data-label="Acount">6 Years</td>
-      <td data-label="Due Date">$8,500</td>
-      <td data-label="Amount">6.99%</td>
-      <td data-label="Period">5</td>
+      <td scope="row" data-label="Credit Score">6 Years</td>
+      <td data-label="Amount">$8,500</td>
+      <td data-label="Rate(APR)">6.99%</td>
+      <td data-label="Total Paid">5</td>
      
+    </tr>
+
+    <tr>
+      <td colspan="4">
+      While these APRs are only examples, this chart gives a good idea of how the difference in credit scores and thus rates lead to a big difference in total money repaid:
+      </td>
     </tr>
   </tbody>
 </table>

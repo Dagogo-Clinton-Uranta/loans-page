@@ -33,7 +33,7 @@ explainer {
 
 .personal__headerExplainer p{
 
-    padding:5rem;
+    padding:1.2rem !important;
     border:  var(--separator-line);
     transition:var(--transition);
    
@@ -195,7 +195,7 @@ z-index: 0;
 @media screen and (max-width:1024px) {
    
    .eroding__header__container {
-        margin-top:35rem !important;
+        margin-top:0rem !important;
        }
 
  }
@@ -207,7 +207,7 @@ z-index: 0;
  @media screen and (max-width:600px) {
      
     .eroding__header__container {
-        margin-top:45rem !important;
+        margin-top:0rem !important;
        }
     
      .header__socials, .scroll__down{
@@ -222,7 +222,7 @@ z-index: 0;
  @media screen and (max-width:450px) {
      
     .eroding__header__container {
-        margin-top:60rem !important;
+        margin-top:0rem !important;
        }
     
      .header__socials, .scroll__down{
@@ -238,7 +238,7 @@ z-index: 0;
  @media screen and (max-width:380px) {
      
     .eroding__header__container {
-        margin-top:72rem !important;
+        margin-top:2rem !important;
        }
     
      .header__socials, .scroll__down{

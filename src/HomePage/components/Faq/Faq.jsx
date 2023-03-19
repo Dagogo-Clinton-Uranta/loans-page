@@ -1,5 +1,5 @@
 import React from 'react'
-import './faq.css'
+import './faqhome.css'
 import { BsFillPatchCheckFill } from 'react-icons/bs'
 import {BsWatch} from 'react-icons/bs'
 import {FaLaptopCode,FaLock} from 'react-icons/fa'
@@ -25,20 +25,20 @@ const a6 = `Personal Loans™ provides its service completely free of charge to 
 const a7 = `Personal Loans™ provides its service completely free of charge to you. However, if you accept a loan offer from a lender, the lender will typically charge an origination fee or other fees. Lenders are required by law to disclose these fees and other important loan information to you before you accept a loan offer. It is important to fully read through the terms of the agreement prior to signing.`
   
   return (
-    <section id='faq'>
+    <section id='faqhome'>
    
    <h2>Frequently Asked Questions</h2>
 
   
-   <div className="container faq__container">
+   <div className="container faqhome__container">
    
-     <SimpleAccordion header={q1} body={a1}/>
-     <SimpleAccordion header={q2} body={a2}/>
-     <SimpleAccordion header={q3} body={a3}/>
-     <SimpleAccordion header={q4} body={a4}/>
-     <SimpleAccordion header={q5} body={a5}/>
-     <SimpleAccordion header={q6} body={a6}/>
-     <SimpleAccordion header={q7} body={a7}/>
+     <SimpleAccordion className ="faqhome__item" header={q1} body={a1}/>
+     <SimpleAccordion className ="faqhome__item" header={q2} body={a2}/>
+     <SimpleAccordion className ="faqhome__item" header={q3} body={a3}/>
+     <SimpleAccordion className ="faqhome__item" header={q4} body={a4}/>
+     <SimpleAccordion className ="faqhome__item" header={q5} body={a5}/>
+     <SimpleAccordion className ="faqhome__item" header={q6} body={a6}/>
+     <SimpleAccordion className ="faqhome__item" header={q7} body={a7}/>
       
 
           

@@ -17,7 +17,7 @@ const DebtWork = () => {
         As mentioned above, debt consolidation works great if you are able to consistently 
         make the payments and avoid incurring further debt. Check out some of the pros
          and cons below to decide if this debt payment method is right for you.
-   <br/><br/>
+   <br/>
       
 <h4>Pros</h4>
 <ul>
@@ -26,14 +26,14 @@ const DebtWork = () => {
 <li>Signing up for automatic withdrawal payments may be able to get you an even lower rate.</li>
 <li>Successfully paying off debt can improve your credit score over time.</li>
 </ul>
-<br/><br/>
+<br/>
 <h4>Cons</h4>
 <ul>
 <li> If you have a variable rate, it may not stay low as long as you need it to.</li>
 <li> If the terms of your loan are longer, you may be paying on the debt much longer.</li>
 </ul>
 
-<br/><br/>
+<br/>
 
 <h4>Pro Tip</h4>
 If consolidating debt frees up money in your budget, put it into an emergency fund or add it to your payments to get out of debt more quickly. Do not think of it as “extra” money and spend it.

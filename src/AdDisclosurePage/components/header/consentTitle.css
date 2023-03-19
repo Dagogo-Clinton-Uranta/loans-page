@@ -176,7 +176,7 @@ z-index: 0;
     .consentTitleHeader {
         width:80%;
         
-        font-size: 0.5rem !important;
+        
     }
 
 
@@ -191,8 +191,9 @@ z-index: 0;
     .consentTitleHeader {
         width:90%;
       
-        font-size: 0.5rem !important;
+      
     }
+   
     
      .consentTitle__socials, .scroll__down{
         display:none;

@@ -42,12 +42,32 @@ table {
     text-transform: uppercase;
     
   }
+
+
+/*======================= MEDIUM SIZE SCREENS   =================================*/
+
+
+  @media screen and (max-width: 1204px) {
+    
+    .tableShrinker{
+      width:90%;
+     }
+  
+  }
+
+
+/*======================= SMALL SIZE SCREENS   =================================*/
   
   @media screen and (max-width: 600px) {
     table {
       border: 0;
 
     }
+
+
+  .tableShrinker{
+    width:80%;
+   }
   
     table caption {
       font-size: 1.3em;

@@ -2,10 +2,12 @@
     display:grid;
     grid-template-columns: 1fr 1fr ;
     gap:2rem;
-
+    border:  var(--separator-line);
     box-shadow: var(--feature-shadow);
     -webkit-box-shadow: var(--feature-shadow);
     -moz-box-shadow: var(--feature-shadow);
+    border: var(--separator-line);
+    border-radius: 1rem;
 }
 
 .fairpersonal__container  > div {
@@ -20,6 +22,10 @@
 -moz-box-shadow: var(--feature-shadow);*/
 }
 
+.btn-ammend {
+width: 60%;
+
+}
 
 .fairpersonal__container  > div:hover {
     background: transparent;
@@ -69,6 +75,11 @@
         grid-template-columns: 1fr;
 
     }
+
+    .btn-ammend {
+        width: 40%;
+        
+        }
 }
 
 
@@ -89,6 +100,11 @@
     .fairpersonal__content {
         padding: 1rem;
     }
+
+
+    .btn-ammend {
+        width: 80%;
+        }
 }
 
 
@@ -107,7 +123,10 @@
 
     }
 
-
+  
+    .btn-ammend {
+        width: 100%;
+        }
 
 
 }

@@ -2,7 +2,7 @@
     display:grid;
     grid-template-columns: 1fr 1fr ;
     gap:2rem;
-
+    border:  var(--separator-line);
     box-shadow: var(--feature-shadow);
     -webkit-box-shadow: var(--feature-shadow);
     -moz-box-shadow: var(--feature-shadow);

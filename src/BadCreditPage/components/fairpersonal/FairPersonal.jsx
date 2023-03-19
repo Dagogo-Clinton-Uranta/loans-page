@@ -21,8 +21,9 @@ const FairPersonal = () => {
 
        </p>
   
-       
-       <button className='btn btn-primary'>Get Started</button>
+       <center>
+       <button  className='btn btn-primary btn-ammend'>Get Started</button>
+       </center>
       </div>
 
        <div className="fairpersonal__backend">

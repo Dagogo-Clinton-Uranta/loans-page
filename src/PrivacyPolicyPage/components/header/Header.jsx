@@ -9,7 +9,7 @@ const Header = () => {
           <center className='consentTitleHeader'>
          <h1>Privacy Policy</h1>
 
-         <p>
+         <p style={{fontSize:"0.9rem"}}>
          We recognize, respect and protect the personal 
          privacy rights of all our users and work diligently
           to safeguard your privacy. We are committed to

@@ -23,7 +23,7 @@
 
 .personal__headerdebtwork p{
 
-    padding:5rem;
+    padding:1.8rem !important;
     border:  var(--separator-line);
     transition:var(--transition);
    
@@ -39,7 +39,7 @@
 
 .personal__headerdebtwork li{
     list-style: circle;
-    padding:1rem;
+    padding:0.3rem !important;
 }
 
 .headerCTA{

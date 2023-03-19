@@ -15,9 +15,10 @@
  /*this too ! you have to have a theming, if not you wont make if far as a front end dev*/
 :root {
     --color-bg: /*#1f1f38*/#0767A830;
+    --color-bg-nav: /*#1f1f38*/#a1c8e4;
     --color-bg-variant:#2c2c6c;
     --color-primary:/*#4db5ff*/#27374C;
-    ;
+    
     --color-primary-variant:#0767A8/*rgba(77,181,255,0.4)*/;
     --color-white:#fff;
     --color-light:rgba(255,255,255,0.6);
@@ -58,6 +59,7 @@ body{
 .container {
     width:var(--container-width-lg);
     margin:0 auto;
+   
 }
 
 h1,
@@ -186,6 +188,28 @@ img {
     .section > h2 {
      margin-bottom:2rem;
     }
+
+
+    h1 {
+        font-size:2.2rem;
+        font-weight:700;
+        margin-bottom:1.5rem;
+    }
+    
+    h2 {
+        font-size:1.6rem;
+        font-weight:700;
+        margin-bottom:1.3rem;
+    
+    }
+    
+    h3 {
+        font-size:1.3rem;
+        font-weight:600;
+        margin-bottom:1rem;
+        margin-top: 2rem;
+    }
+    
  
  
  }

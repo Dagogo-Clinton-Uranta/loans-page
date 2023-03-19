@@ -3,6 +3,8 @@
     grid-template-columns: 1fr 1fr ;
     gap:2rem;
   width:77% !important;
+
+  border:var(--separator-line) ;
     box-shadow: var(--feature-shadow);
     -webkit-box-shadow: var(--feature-shadow);
     -moz-box-shadow: var(--feature-shadow);
@@ -106,7 +108,7 @@
 
     .howtodebt__container > div {
         width:100%;
-        padding:2rem 1rem;
+       padding:2rem 1rem;
 
     }
 

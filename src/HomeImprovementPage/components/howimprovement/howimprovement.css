@@ -2,7 +2,7 @@
    /* height:100vh;
     padding-top: 7rem;
     overflow:visible;*/
-     padding-top: 5rem;
+     padding-top: 1rem !important;
     
 }
 
@@ -17,12 +17,12 @@
 
 .personal__headerhowimprovement{
     flex:1;
-    padding:5%;
+    padding:0.5% ;
 }
 
 .personal__headerhowimprovement p{
 
-    padding:5rem;
+    padding:1.2rem !important;
     border:  var(--separator-line);
     transition:var(--transition);
    

@@ -15,6 +15,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import InfoIcon from '@mui/icons-material/Info';
 import HomeIcon from '@mui/icons-material/Home';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import { Link } from 'react-router-dom';
 
 export default function HamburgerMenu() {
   const [anchorEl, setAnchorEl] = useState(null)
@@ -24,6 +25,7 @@ export default function HamburgerMenu() {
   };
   const handleClose = () => {
     setAnchorEl(null);
+    
   };
 
   return (
@@ -78,26 +80,35 @@ export default function HamburgerMenu() {
         transformOrigin={{ horizontal: 'right', vertical: 'top' }}
         anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
       >
-        <MenuItem onClick={handleClose}>
+        <Link to="/">
+        <MenuItem >
         <ListItemIcon>
             <HomeIcon fontSize="small" />
           </ListItemIcon>
            Home
         </MenuItem>
+        </Link>
+
         <Divider />
-        <MenuItem onClick={handleClose}>
+        <Link to="/about">
+        <MenuItem >
         <ListItemIcon>
             <InfoIcon fontSize="small" />
           </ListItemIcon>
            About us
         </MenuItem>
+        </Link>
+        
+
         <Divider />
-        <MenuItem onClick={handleClose}>
+        <Link to="/personalloans">
+        <MenuItem >
           <ListItemIcon>
           <Settings fontSize="small" />
           </ListItemIcon>
            How It Works
         </MenuItem>
+        </Link>
        
         
       </Menu>

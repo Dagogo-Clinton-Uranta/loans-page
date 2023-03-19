@@ -59,8 +59,11 @@ header {
 .headerCTA{
     flex:1;
     position: relative;
-   
+    /*transform: scaleX(1.1);*/
 }
+
+
+
 
 .CTAbox{
     background-color: var(--color-white);
@@ -397,7 +400,7 @@ z-index: -1;
      }
 
      .headerCTA {
-        transform: scale(0.75);
+        transform: scale(0.8);
      }
   
   }
