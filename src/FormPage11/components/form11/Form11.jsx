@@ -2,52 +2,25 @@ import React from 'react'
 import './form11.css'
 import { BsFillPatchCheckFill } from 'react-icons/bs'
 import BasicSelect from './BasicSelect'
+import samplerouting from './samplerouting.png'
 
 
 const Form11 = () => {
   return (
     <section id='Form11'>
    
-   <h2>First We'll want to know a little bit about you...</h2>
+   <h2>Alexander, we have several partners interested in providing you funding.</h2>
    
    <div className="container Form11__container">
    
       <div className="Form11__frontend">
        
        <div className="formQuestion"> 
-       <h4>What is your name? </h4>
+       <h4>What is your driver's license or state ID number? </h4>
        <p>
-       Providing accurate information allows lenders and lending partners to customize your loan offer and gives you the best chance of being approved.
-       We may also share this information with our marketing partners so they can send you offers or other messages about loans, debt relief, and other credit-related services.
-       </p>
+       Enter your driver's license ID or your state ID number.<br/>
 
-       </div>
-
-       <div className="formAnswer">
-      
-        <div>
-       <label for="first name">First Name</label>
-      <input type="text" id="javascript" name="fav_language"/> 
-      </div>
-       
-       
-        <div>
-      <label for="last name">Last Name</label>
-      <input type="text" id="javascript" name="fav_language"/>
-      </div>
-      </div>
-
-
-    </div>
-
-      <hr />
-
-      <div className="Form11__frontend">
-       
-       <div className="formQuestion"> 
-       <h4>What is your date of birth? </h4>
-       <p>
-       Our lenders may use your date of birth to verify your identity and evaluate your loan inquiry.
+Lenders and lending partners must be able to verify your identity when reviewing your request.
        </p>
 
        </div>
@@ -55,12 +28,15 @@ const Form11 = () => {
        <div className="formAnswerSingle">
       
         <div>
-       <label for="first name">Date of Birth</label>
-       <input type="date" id="javascript" name="fav_language"/>  
+       <label for="license">License</label>
+      <input type="text" id="license" name="license"/> 
       </div>
        
        
-       
+        <div>
+      <label for="Issuing_State">Issuing State</label>
+      <input type="text" id="Issuing_State" name="Issuing_State"/>
+      </div>
       </div>
 
 
@@ -70,30 +46,42 @@ const Form11 = () => {
     <div className="Form11__frontend">
        
        <div className="formQuestion"> 
-       <h4>What is the loan Reason? </h4>
+       <h4>Which Bank Account Will you receive your loan ? </h4>
        <p>
-       Please let us know what you plan to use your loan for.
+       Please provide accurate information of where you would like
+        your funds deposited. We use data encryption to protect your 
+        information when you submit on our website.
        </p>
 
        </div>
 
-       <div className="formAnswer">
+       <div className="formAnswerSingle">
       
         <div>
-       <label for="first name">Loan Reason</label>
-       <BasicSelect/>
+       <label for="license">ABA/Routing Number</label>
+      <input type="text" id="license" name="license"/> 
       </div>
        
        
-      
+        <div>
+      <label for="Issuing_State">Account Number</label>
+      <input type="text" id="Issuing_State" name="Issuing_State"/>
+      </div>
       </div>
 
 
     </div>
 
-    <div className = "formContinue">
+
+    <div   className = "formContinue">
+        <img style={{width:"100%"}} src={samplerouting} alt="smaple routing number and account number" />
+       </div>
+
+
+
+    <div className = "formContinue" >
         <button className="btn btn-primary">
-          CONTINUE
+          SUBMIT
           </button>
        </div>
 

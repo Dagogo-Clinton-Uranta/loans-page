@@ -8,33 +8,28 @@ const Form9 = () => {
   return (
     <section id='Form9'>
    
-   <h2>First We'll want to know a little bit about you...</h2>
+   <h2>Almost there, let's do this!</h2>
    
    <div className="container Form9__container">
    
       <div className="Form9__frontend">
        
        <div className="formQuestion"> 
-       <h4>What is your name? </h4>
+       <h4>What is your credit score? </h4>
        <p>
-       Providing accurate information allows lenders and lending partners to customize your loan offer and gives you the best chance of being approved.
-       We may also share this information with our marketing partners so they can send you offers or other messages about loans, debt relief, and other credit-related services.
+       We ask for this information to help ensure that you are connected with a lender or lending partner that can work for you.
        </p>
 
        </div>
 
-       <div className="formAnswer">
+       <div className="formAnswerSingle">
       
         <div>
-       <label for="first name">First Name</label>
-      <input type="text" id="javascript" name="fav_language"/> 
+       <label for="credit score">Credit Score</label>
+       <BasicSelect/>
       </div>
        
        
-        <div>
-      <label for="last name">Last Name</label>
-      <input type="text" id="javascript" name="fav_language"/>
-      </div>
       </div>
 
 
@@ -45,10 +40,8 @@ const Form9 = () => {
       <div className="Form9__frontend">
        
        <div className="formQuestion"> 
-       <h4>What is your date of birth? </h4>
-       <p>
-       Our lenders may use your date of birth to verify your identity and evaluate your loan inquiry.
-       </p>
+       <h4>Do you have any unsecured debt? </h4>
+       
 
        </div>
 
@@ -56,7 +49,7 @@ const Form9 = () => {
       
         <div>
        <label for="first name">Date of Birth</label>
-       <input type="date" id="javascript" name="fav_language"/>  
+       <BasicSelect/>
       </div>
        
        
@@ -70,20 +63,31 @@ const Form9 = () => {
     <div className="Form9__frontend">
        
        <div className="formQuestion"> 
-       <h4>What is the loan Reason? </h4>
+       <h4>Do you own a car that is paid off? </h4>
        <p>
-       Please let us know what you plan to use your loan for.
+       We may have title loan options for you that could have better rates.
        </p>
 
        </div>
 
        <div className="formAnswer">
       
-        <div>
-       <label for="first name">Loan Reason</label>
-       <BasicSelect/>
-      </div>
        
+        
+       <fieldset id="groupCarPaidOff">
+        <div className='radioCover9'>
+       <input type="radio" className='radio' name="groupCarPaidOff"></input>Yes, and I want to see title loan options
+       </div>
+
+     <div className='radioCover9'>
+     <input type="radio" className='radio' name="groupCarPaidOff"></input>Yes, but don't show title loan options
+     </div>
+
+     <div className='radioCover9'>
+     <input type="radio" className='radio' name="groupCarPaidOff"></input>No, I don't own a car that is paid off
+     </div>
+
+    </fieldset>
        
       
       </div>

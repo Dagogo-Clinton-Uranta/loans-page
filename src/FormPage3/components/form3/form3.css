@@ -1,19 +1,21 @@
 .Form3__container {
     display:grid;
     grid-template-columns: 1fr ;
+
+    
+    transition:var(--transition);
+   
+    box-shadow: var(--feature-shadow);
+  -webkit-box-shadow: var(--feature-shadow);
+  -moz-box-shadow: var(--feature-shadow);
     
 }
 
 .Form3__container  > div {
   background: var(--color-bg-white);
   padding:2.4rem 5rem;
-  
   border:  var(--separator-line);
-  transition:var(--transition);
  
-  box-shadow: var(--feature-shadow);
--webkit-box-shadow: var(--feature-shadow);
--moz-box-shadow: var(--feature-shadow);
 }
 
 .Form3__container > div:nth-last-child(2) {
@@ -125,9 +127,9 @@
 
 .formContinue {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    box-shadow: var(--feature-shadow);
+    
     
 }
 
@@ -187,7 +189,7 @@
        .formContinue {
         justify-content: center;
         align-items:flex-start;
-        box-shadow: var(--feature-shadow);
+        
         
     }
     

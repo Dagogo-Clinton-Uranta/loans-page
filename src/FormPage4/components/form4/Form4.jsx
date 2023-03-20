@@ -8,46 +8,16 @@ const Form4 = () => {
   return (
     <section id='Form4'>
    
-   <h2>First We'll want to know a little bit about you...</h2>
+   <h2>Alexander, we're here to help with your Loan request.</h2>
    
    <div className="container Form4__container">
    
       <div className="Form4__frontend">
        
        <div className="formQuestion"> 
-       <h4>What is your name? </h4>
+       <h4>What is your contact information? </h4>
        <p>
-       Providing accurate information allows lenders and lending partners to customize your loan offer and gives you the best chance of being approved.
-       We may also share this information with our marketing partners so they can send you offers or other messages about loans, debt relief, and other credit-related services.
-       </p>
-
-       </div>
-
-       <div className="formAnswer">
-      
-        <div>
-       <label for="first name">First Name</label>
-      <input type="text" id="javascript" name="fav_language"/> 
-      </div>
-       
-       
-        <div>
-      <label for="last name">Last Name</label>
-      <input type="text" id="javascript" name="fav_language"/>
-      </div>
-      </div>
-
-
-    </div>
-
-      <hr />
-
-      <div className="Form4__frontend">
-       
-       <div className="formQuestion"> 
-       <h4>What is your date of birth? </h4>
-       <p>
-       Our lenders may use your date of birth to verify your identity and evaluate your loan inquiry.
+       Lending partners may reach out to you to confirm your loan request. You may also receive offers for other credit-related services. Learn more here.
        </p>
 
        </div>
@@ -55,41 +25,33 @@ const Form4 = () => {
        <div className="formAnswerSingle">
       
         <div>
-       <label for="first name">Date of Birth</label>
-       <input type="date" id="javascript" name="fav_language"/>  
-      </div>
-       
-       
-       
+       <label for="email">Email</label>
+      <input type="text" id="email" name="email"/> 
       </div>
 
-
-    </div>
-
-
-    <div className="Form4__frontend">
-       
-       <div className="formQuestion"> 
-       <h4>What is the loan Reason? </h4>
        <p>
-       Please let us know what you plan to use your loan for.
+       By entering your email, you agree to receive emails from us,
+        our lending partners, and other marketing partners offering 
+        or marketing loans, debt relief, and other credit-related services.
        </p>
-
-       </div>
-
-       <div className="formAnswer">
-      
+       
+       
         <div>
-       <label for="first name">Loan Reason</label>
-       <BasicSelect/>
+      <label for="phone_number2">Phone Number  (optional)</label>
+      <input type="text" id="phone-number" name="phone_number"/>
       </div>
-       
-       
-      
+
+      Entering your phone number and clicking "Continue" is your e-signature instructing us and up to
+       five of our lending partners and other marketing partners to send you offers and other messages 
+       about loans, debt relief, and other credit-related services by text message, automatic phone call, 
+       and/or prerecorded message, even if you are on a do-not-call list. Consent is not required to buy any
+        goods and services; you may choose to contact customer support at 1-800-772-2274.
       </div>
 
 
     </div>
+
+    
 
     <div className = "formContinue">
         <button className="btn btn-primary">

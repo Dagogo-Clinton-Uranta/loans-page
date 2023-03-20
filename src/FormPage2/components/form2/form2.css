@@ -1,8 +1,14 @@
 .Form2__container {
     display:grid;
     grid-template-columns: 1fr ;
+
+    box-shadow: var(--feature-shadow);
+    -webkit-box-shadow: var(--feature-shadow);
+    -moz-box-shadow: var(--feature-shadow);
     
 }
+
+
 
 .Form2__container  > div {
   background: var(--color-bg-white);
@@ -11,9 +17,7 @@
   border:  var(--separator-line);
   transition:var(--transition);
  
-  box-shadow: var(--feature-shadow);
--webkit-box-shadow: var(--feature-shadow);
--moz-box-shadow: var(--feature-shadow);
+
 }
 
 .Form2__container > div:nth-last-child(2) {
@@ -100,7 +104,7 @@
 
 .formAnswerSingle{
     flex: 1;
-    
+   
    /* display: flex;
     gap: 1rem;*/
   }
@@ -111,6 +115,8 @@
    height:55px;
    width:80%;
    display: block;
+
+   margin-bottom: 1rem;
   
   }
 
@@ -125,10 +131,12 @@
 
 .formContinue {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    box-shadow: var(--feature-shadow);
-    
+    justify-content: center ;
+    align-items: flex-start;
+  
+   width:50%;
+   margin-left: 50%;
+  border-left: none !important; /* temporay fix for continue button, having issues with left border*/
 }
 
 

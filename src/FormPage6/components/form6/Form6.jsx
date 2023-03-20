@@ -15,26 +15,24 @@ const Form6 = () => {
       <div className="Form6__frontend">
        
        <div className="formQuestion"> 
-       <h4>What is your name? </h4>
+       <h4>What is your primary source of income? </h4>
        <p>
-       Providing accurate information allows lenders and lending partners to customize your loan offer and gives you the best chance of being approved.
-       We may also share this information with our marketing partners so they can send you offers or other messages about loans, debt relief, and other credit-related services.
+       Our Lenders and lending partners require this information to determine your eligibility
+        and your ability to repay your loan. Alimony, child support, and seperate maintenance
+         income do not need to be included if you do not want it to be considered as a basis for repayment for lender’s loan offer that you may be connected with.
        </p>
 
        </div>
 
-       <div className="formAnswer">
+       <div className="formAnswerSingle">
       
         <div>
-       <label for="first name">First Name</label>
-      <input type="text" id="javascript" name="fav_language"/> 
+       <label for="incomeSource">Income Source</label>
+      <input type="text" id="javascript" name="incomeSource"/> 
       </div>
        
        
-        <div>
-      <label for="last name">Last Name</label>
-      <input type="text" id="javascript" name="fav_language"/>
-      </div>
+       
       </div>
 
 
@@ -45,18 +43,16 @@ const Form6 = () => {
       <div className="Form6__frontend">
        
        <div className="formQuestion"> 
-       <h4>What is your date of birth? </h4>
-       <p>
-       Our lenders may use your date of birth to verify your identity and evaluate your loan inquiry.
-       </p>
+       <h4>If you are employed, how long have you been employed for? </h4>
+      
 
        </div>
 
        <div className="formAnswerSingle">
       
         <div>
-       <label for="first name">Date of Birth</label>
-       <input type="date" id="javascript" name="fav_language"/>  
+       <label for="time_employed">Time Employed(years)</label>
+       <input type="text" id="time_employed" name="time_employed"/>  
       </div>
        
        
@@ -70,19 +66,48 @@ const Form6 = () => {
     <div className="Form6__frontend">
        
        <div className="formQuestion"> 
-       <h4>What is the loan Reason? </h4>
-       <p>
-       Please let us know what you plan to use your loan for.
-       </p>
+       <h4>How often do you get paid or receive other income? </h4>
+       
 
        </div>
 
-       <div className="formAnswer">
+       <div className="formAnswerSingle">
       
         <div>
-       <label for="first name">Loan Reason</label>
+       <label for="first name">I get paid</label>
        <BasicSelect/>
       </div>
+       
+       
+      
+      </div>
+
+
+    </div>
+
+
+    <div className="Form6__frontend">
+       
+       <div className="formQuestion"> 
+       <h4>Are you in the military, or are you the spouse or dependant of someone in the military? </h4>
+       
+
+       </div>
+
+       <div className="formAnswerSingle">
+      
+
+
+      <fieldset id="groupMilitary">
+        <div className='radioCover'>
+       <input type="radio" className='radio' name="groupMilitary"></input>YES
+       </div>
+
+     <div className='radioCover'>
+     <input type="radio" className='radio' name="groupMilitary"></input>NO
+     </div>
+
+    </fieldset>
        
        
       

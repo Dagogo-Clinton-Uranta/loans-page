@@ -8,33 +8,29 @@ const Form10 = () => {
   return (
     <section id='Form10'>
    
-   <h2>First We'll want to know a little bit about you...</h2>
+   <h2>Last questions, almost done!</h2>
    
    <div className="container Form10__container">
    
       <div className="Form10__frontend">
        
        <div className="formQuestion"> 
-       <h4>What is your name? </h4>
-       <p>
-       Providing accurate information allows lenders and lending partners to customize your loan offer and gives you the best chance of being approved.
-       We may also share this information with our marketing partners so they can send you offers or other messages about loans, debt relief, and other credit-related services.
-       </p>
-
+       <h4>Access to additional lenders </h4>
        </div>
 
-       <div className="formAnswer">
+       <div className="formAnswerSingle">
       
-        <div>
-       <label for="first name">First Name</label>
-      <input type="text" id="javascript" name="fav_language"/> 
-      </div>
-       
-       
-        <div>
-      <label for="last name">Last Name</label>
-      <input type="text" id="javascript" name="fav_language"/>
-      </div>
+       <div className='radioCover9'>
+     <input type="checkbox" className='radio' name="additionalLenders"></input>Yes, accept additional lenders
+     </div>
+         <p>Accessing our extended network of additional lenders may increase 
+          your chances of receiving a loan offer because more lenders will 
+          see your request. The extended network includes the PersonalLoans.com 
+          network of lenders and also third party lender networks that have access 
+          to additional lenders. The other lender networks and additional lenders
+           will see your information. Learn more here.
+           </p>
+      
       </div>
 
 
@@ -45,20 +41,24 @@ const Form10 = () => {
       <div className="Form10__frontend">
        
        <div className="formQuestion"> 
-       <h4>What is your date of birth? </h4>
-       <p>
-       Our lenders may use your date of birth to verify your identity and evaluate your loan inquiry.
-       </p>
-
+       <h4>Other credit-related offers </h4>
+      
        </div>
 
        <div className="formAnswerSingle">
       
-        <div>
-       <label for="first name">Date of Birth</label>
-       <input type="date" id="javascript" name="fav_language"/>  
-      </div>
+       <div className='radioCover9'>
+     <input type="checkbox" className='radio' name="otherOffers"></input>Yes, other credit-related offers
+     </div>
        
+       <p>
+       You will receive additional offers that you may find helpful
+        even if no lender offers you a loan. This includes offers for 
+        loans, debt relief, banking, credit repair, credit monitoring,
+         or other credit-related offers. We may share your contact information
+          so they can make you an offer or send you a message. These other
+           offers help us make a financial profit off of our free service. Learn more here.
+       </p>
        
        
       </div>
@@ -70,22 +70,29 @@ const Form10 = () => {
     <div className="Form10__frontend">
        
        <div className="formQuestion"> 
-       <h4>What is the loan Reason? </h4>
+       <h4>Required Authorizations </h4>
        <p>
-       Please let us know what you plan to use your loan for.
+       We are required by law to obtain these authorizations from you before you can use our service.
        </p>
+
 
        </div>
 
-       <div className="formAnswer">
+       <div className="formAnswerSingle">
       
-        <div>
-       <label for="first name">Loan Reason</label>
-       <BasicSelect/>
-      </div>
+       <div className='radioCover9'>
+     <input type="checkbox" className='radio' name="iAgree"></input>I agree
+     </div>
+       
+       <p>
+       By checking the box, I authorize this site to share all of my information with its Lending Partners to process my loan inquiry, as described in more detail in the Ad Disclosure & Privacy Policy.
+This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.
+By clicking "Submit", you agree as follows:
+I confirm that I have read, understood, and agree to the Ad Disclosure, Privacy Policy, Terms of Use, E-Consent, and Credit Authorization.
+I authorize PersonalLoans.com to use my information to create an account that will allow me to more easily submit future loan inquiries on this site and its affiliated sites.
+       </p>
        
        
-      
       </div>
 
 
@@ -93,7 +100,7 @@ const Form10 = () => {
 
     <div className = "formContinue">
         <button className="btn btn-primary">
-          CONTINUE
+          SUBMIT
           </button>
        </div>
 

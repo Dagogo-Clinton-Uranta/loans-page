@@ -1,6 +1,11 @@
 .Form5__container {
     display:grid;
     grid-template-columns: 1fr ;
+
+
+  box-shadow: var(--feature-shadow);
+  -webkit-box-shadow: var(--feature-shadow);
+  -moz-box-shadow: var(--feature-shadow);
     
 }
 
@@ -10,10 +15,6 @@
   
   border:  var(--separator-line);
   transition:var(--transition);
- 
-  box-shadow: var(--feature-shadow);
--webkit-box-shadow: var(--feature-shadow);
--moz-box-shadow: var(--feature-shadow);
 }
 
 .Form5__container > div:nth-last-child(2) {
@@ -91,6 +92,27 @@
    
    }
 
+
+   .radio{
+    height:20px !important;
+    width:10% !important;
+    display: inline !important;
+   
+   }
+
+   .radioCover {
+    border:var(--separator-line);
+    padding:1rem;
+    margin-bottom: 1rem;
+   }
+
+   .radioCover9 {
+    border:var(--separator-line);
+    padding:1rem;
+    margin-bottom: 1rem;
+    width:600px;
+   }
+
    .formAnswer input:hover {
     background: transparent;
     border-color:var(--color-primary-variant);
@@ -125,9 +147,9 @@
 
 .formContinue {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    box-shadow: var(--feature-shadow);
+    
     
 }
 
@@ -184,10 +206,14 @@
        
        }
 
+       .radioCover9 {
+        width:100%;
+       }
+
        .formContinue {
         justify-content: center;
         align-items:flex-start;
-        box-shadow: var(--feature-shadow);
+        
         
     }
     

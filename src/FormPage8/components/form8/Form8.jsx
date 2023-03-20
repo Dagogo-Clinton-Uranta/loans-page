@@ -8,14 +8,14 @@ const Form8 = () => {
   return (
     <section id='Form8'>
    
-   <h2>First We'll want to know a little bit about you...</h2>
+   <h2>Thanks Alexander, Please help us verify your identity...</h2>
    
    <div className="container Form8__container">
    
       <div className="Form8__frontend">
        
        <div className="formQuestion"> 
-       <h4>What is your name? </h4>
+       <h4>What is your driver's license or state ID number?</h4>
        <p>
        Providing accurate information allows lenders and lending partners to customize your loan offer and gives you the best chance of being approved.
        We may also share this information with our marketing partners so they can send you offers or other messages about loans, debt relief, and other credit-related services.
@@ -23,17 +23,17 @@ const Form8 = () => {
 
        </div>
 
-       <div className="formAnswer">
+       <div className="formAnswerSingle">
       
         <div>
-       <label for="first name">First Name</label>
-      <input type="text" id="javascript" name="fav_language"/> 
+       <label for="license">License</label>
+      <input type="text" id="license" name="license"/> 
       </div>
        
        
         <div>
-      <label for="last name">Last Name</label>
-      <input type="text" id="javascript" name="fav_language"/>
+      <label for="issuing_state">Issuing State</label>
+      <input type="text" id="issuing_state" name="issuing_state"/>
       </div>
       </div>
 
@@ -45,18 +45,27 @@ const Form8 = () => {
       <div className="Form8__frontend">
        
        <div className="formQuestion"> 
-       <h4>What is your date of birth? </h4>
+       <h4>Are you paid with direct deposit or paper check?</h4>
        <p>
-       Our lenders may use your date of birth to verify your identity and evaluate your loan inquiry.
+       If your paycheck is funded directly to your banking account, select direct deposit.<br/>
+TIP: Lenders and lending partners are more likely to fund a loan to an account with direct deposit.
        </p>
 
        </div>
 
        <div className="formAnswerSingle">
       
-        <div>
-       <label for="first name">Date of Birth</label>
-       <input type="date" id="javascript" name="fav_language"/>  
+       <fieldset id="groupPaytype">
+        <div className='radioCover'>
+       <input type="radio" className='radio' name="groupPaytype"></input>Direct Deposit
+       </div>
+
+     <div className='radioCover'>
+     <input type="radio" className='radio' name="groupPaytype"></input>Paper Check
+     </div>
+
+    </fieldset>
+
       </div>
        
        
@@ -64,23 +73,21 @@ const Form8 = () => {
       </div>
 
 
-    </div>
+   
 
 
     <div className="Form8__frontend">
        
        <div className="formQuestion"> 
-       <h4>What is the loan Reason? </h4>
-       <p>
-       Please let us know what you plan to use your loan for.
-       </p>
+       <h4>How many months have you been at your bank? </h4>
+      
 
        </div>
 
        <div className="formAnswer">
       
         <div>
-       <label for="first name">Loan Reason</label>
+       <label for="first name">Months at Bank</label>
        <BasicSelect/>
       </div>
        
@@ -97,6 +104,7 @@ const Form8 = () => {
           </button>
        </div>
 
+      
    </div>
 
      

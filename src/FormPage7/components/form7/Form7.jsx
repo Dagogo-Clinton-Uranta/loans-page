@@ -8,46 +8,46 @@ const Form7 = () => {
   return (
     <section id='Form7'>
    
-   <h2>First We'll want to know a little bit about you...</h2>
+   <h2>Your request is almost complete</h2>
    
    <div className="container Form7__container">
    
       <div className="Form7__frontend">
        
        <div className="formQuestion"> 
-       <h4>What is your name? </h4>
+       <h4>What type of bank account do you have? </h4>
        <p>
-       Providing accurate information allows lenders and lending partners to customize your loan offer and gives you the best chance of being approved.
-       We may also share this information with our marketing partners so they can send you offers or other messages about loans, debt relief, and other credit-related services.
+       Select the type of account you would like your loan deposited to.
+TIP: Lenders and lending partners are more likely to fund to a checking account than a savings account.
        </p>
 
        </div>
 
-       <div className="formAnswer">
+       <div className="formAnswerSingle">
       
-        <div>
-       <label for="first name">First Name</label>
-      <input type="text" id="javascript" name="fav_language"/> 
-      </div>
-       
-       
-        <div>
-      <label for="last name">Last Name</label>
-      <input type="text" id="javascript" name="fav_language"/>
-      </div>
+       <fieldset id="groupBankAccount">
+        <div className='radioCover'>
+       <input type="radio" className='radio' name="groupBankAccount"></input>Checking
+       </div>
+
+     <div className='radioCover'>
+     <input type="radio" className='radio' name="groupBankAccount"></input> Savings
+     </div>
+
+    </fieldset>
       </div>
 
 
     </div>
 
-      <hr />
+   
 
       <div className="Form7__frontend">
        
        <div className="formQuestion"> 
-       <h4>What is your date of birth? </h4>
+       <h4>What is your Social Security Number? </h4>
        <p>
-       Our lenders may use your date of birth to verify your identity and evaluate your loan inquiry.
+       Lenders and lending partners use your SSN to verify your identity, to help prevent fraud and to check your credit. It is important to provide a valid SSN when submitting a loan request. We use data encryption to protect your information when submitting on our website.
        </p>
 
        </div>
@@ -55,41 +55,21 @@ const Form7 = () => {
        <div className="formAnswerSingle">
       
         <div>
-       <label for="first name">Date of Birth</label>
-       <input type="date" id="javascript" name="fav_language"/>  
-      </div>
-       
-       
-       
+       <label for="ssn">Social Security Number</label>
+       <input type="text" id="ssn" name="ssn"/>  
       </div>
 
-
-    </div>
-
-
-    <div className="Form7__frontend">
-       
-       <div className="formQuestion"> 
-       <h4>What is the loan Reason? </h4>
-       <p>
-       Please let us know what you plan to use your loan for.
-       </p>
-
+       <div>
+        By entering your social security number, you are providing written instruction undr the Fair Credit Act and other laws for poorcreditquickloans.com and the lenders who review your loan  to obtain your credit report from one or more consumer reporting agencies and to use your credit profile and the information you provide on this form to evaluate your loan inquiry and your creditworthiness.
        </div>
-
-       <div className="formAnswer">
-      
-        <div>
-       <label for="first name">Loan Reason</label>
-       <BasicSelect/>
-      </div>
-       
-       
-      
+   
       </div>
 
 
     </div>
+
+
+ 
 
     <div className = "formContinue">
         <button className="btn btn-primary">
