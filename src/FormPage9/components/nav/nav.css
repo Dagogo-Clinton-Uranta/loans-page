@@ -1,0 +1,136 @@
+nav {
+    background: var(--color-bg-nav) !important;
+    width:100% /*max-content*/; /*max content fits the width of the content itself*/
+    display: block;
+    padding:0.7rem 1.7rem;
+    position:relative;
+    z-index: 2;
+
+    /*another centering style when youdont know the 
+    exact dimensions of the container element */
+
+   left:50%;
+    transform: translateX(-50%);
+   /* bottom: 2rem;*/
+
+    display:flex;
+    gap:0.8rem; /*the gap for display flex is on the same level as display flex*/
+    /*border-radius: 3rem;*/
+   /* backdrop-filter:blur(15px); please what is backdrop filter ? go research */
+    
+}
+
+.navContainer {
+    margin: 0 auto;
+    width: var(--container-width-lg);
+
+    display:flex;
+    justify-content: space-between;
+
+   
+}
+
+.navLinks {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+nav a {
+    background:transparent;
+    padding:0.9rem;
+    border-radius:50%;
+    display:flex;
+    color:var(--color-primary);
+    font-size:1.1rem; 
+}
+
+nav a:hover {
+    color:var(--color-primary-variant);
+}
+
+.mobileDisp {
+    display: none ;
+   
+}
+
+
+
+/*nav a.active {
+    background:var(--color-primary);
+    color:var(--color-bg);
+}*/
+
+
+
+        
+
+
+
+
+
+/* ======================== MEDIA QUERIES FOR HEADER (MEDIUM DEVICES) ======================*/
+
+@media screen and (max-width:1024px) {
+    .navContainer {
+        
+        width: var(--container-width-md);
+    
+      
+       
+    }
+
+    nav {
+          
+        position: fixed !important;
+        top:0 !important; 
+       
+        /* width:100% !important;just for the navbar*/
+      }
+
+
+
+    .mobileDisp {
+        display: inline-block !important;
+        opacity: 1;
+    }
+
+   
+    }
+
+
+
+    /* ======================== MEDIA QUERIES (KINDA MEDIUM DEVICES) ======================*/
+
+    @media screen and (max-width:900px) {
+      
+        .desktopDisp {
+            display: none !important;
+        }
+     
+     }
+    
+
+
+    
+    /* ======================== MEDIA QUERIES FOR HEADER (SMALL DEVICES) ======================*/
+    
+    @media screen and (max-width:600px) {
+        
+        .navContainer {
+          
+            width: var(--container-width-sm);
+           
+           
+        }
+
+        .mobileDisp {
+            display: inline-block;
+        }
+     
+        .desktopDisp {
+         display: none;
+        }
+     }
+   

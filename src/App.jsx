@@ -18,6 +18,16 @@ import AdDisclosurePage from './AdDisclosurePage/AdDisclosurePage';
 import ThirdPartiesPage from './ThirdPartiesPage/ThirdPartiesPage';
 import RatesAndFeesPage from './RatesAndFeesPage/RatesAndFeesPage';
 import PrivacyPolicyPage from './PrivacyPolicyPage/PrivacyPolicyPage';
+import FormPage2 from './FormPage2/FormPage2';
+import FormPage3 from './FormPage3/FormPage3';
+import FormPage4 from './FormPage4/FormPage4';
+import FormPage5 from './FormPage5/FormPage5';
+import FormPage6 from './FormPage6/FormPage6';
+import FormPage7 from './FormPage7/FormPage7';
+import FormPage8 from './FormPage8/FormPage8';
+import FormPage9 from './FormPage9/FormPage9';
+import FormPage10 from './FormPage10/FormPage10';
+import FormPage11 from './FormPage11/FormPage11';
 
 //jsx files are for emmet shortcux, not js
 
@@ -49,6 +59,16 @@ const App = () => {
      < Route path="/creditauthorization"  element={<CreditAuthorizationPage/>}/>
      < Route path="/ratesandfees"  element={<RatesAndFeesPage/>}/>
      < Route path="/privacypolicy"  element={<PrivacyPolicyPage/>}/>
+     < Route path="/page2"  element={<FormPage2/>}/>
+     < Route path="/page3"  element={<FormPage3/>}/>
+     < Route path="/page4"  element={<FormPage4/>}/>
+     < Route path="/page5"  element={<FormPage5/>}/>
+     < Route path="/page6"  element={<FormPage6/>}/>
+     < Route path="/page7"  element={<FormPage7/>}/>
+     < Route path="/page8"  element={<FormPage8/>}/>
+     < Route path="/page9"  element={<FormPage9/>}/>
+     < Route path="/page10"  element={<FormPage10/>}/>
+     < Route path="/page11"  element={<FormPage11/>}/>
     </Routes>
   </Router> 
   )
