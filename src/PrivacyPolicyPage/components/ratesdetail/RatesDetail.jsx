@@ -15,7 +15,7 @@ const RatesDetail = () => {
          <h3>Repayment</h3>
         <p>
     
-        Repayment on personal loans is generally performed either monthly
+        Repayment on loans is generally performed either monthly
          or once every two weeks, depending either on your preferences
           or your lender's or lending partner’s terms. You may be able
            to have funds withdrawn automatically from your bank account

@@ -22,7 +22,7 @@ const EmePersonal = () => {
         
          For example, emergency loans for the unemployed
           can cover living expenses temporarily and be repaid
-           when you are working again. Personal loans can come 
+           when you are working again.Loans can come 
            in small amounts as well, which is beneficial since
             you should never borrow more than you need and can
              reasonably pay back.

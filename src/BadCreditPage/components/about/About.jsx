@@ -23,7 +23,7 @@ const About = () => {
              you will have the chance to study the lender's final offer before deciding to 
              accept the loan terms.
           We advise you to carefully review the terms of any loan offer you get. You can get
-           in touch with us whenever you need assistance with any of PersonalLoans.com's services.
+           in touch with us whenever you need assistance with any of poorcreditquickloans.com's services.
         </p>
       </div>
      

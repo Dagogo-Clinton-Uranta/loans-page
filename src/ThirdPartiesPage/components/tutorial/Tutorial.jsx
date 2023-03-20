@@ -256,7 +256,7 @@ const Tutorial = () => {
 <li>Discountloans.com</li>
 <li>Discover</li>
 <li>Discover Home Loans</li>
-<li>Discover® Personal Loans</li>
+<li>Discover® Poor Credit Quick Loans</li>
 <li>Ditech Mortgage Corp</li>
 <li>Ditech Mortgage Corp (CA Branch)</li>
 <li>Ditech.com</li>

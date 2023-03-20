@@ -14,7 +14,7 @@ const FairPersonal = () => {
    
       <div className="fairpersonal__frontend">
       
-      <h2>JFind Fair Personal Loans for Bad Credit</h2>
+      <h2>Find Fair Personal Loans for Bad Credit</h2>
        <p>
        Learning how to get a loan with bad credit is the first step; now it’s time to use the tips we provided to see if you qualify for a personal loan.
        Learn more about the ins and outs of personal loans for bad credit, or submit a request for a personal loan right now, so you don’t have to put your life on hold.
