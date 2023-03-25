@@ -74,6 +74,9 @@ const Form8 = () => {
              fontWeight:"bold",
              position:"relative",
              left:"10%",
+             display:"flex",
+             justifyContent:"center",
+             alignItems:"center",
              paddingBottom:"2rem",
              backgroundColor:"transparent"}}> 
              <BsArrowLeftShort/> Back

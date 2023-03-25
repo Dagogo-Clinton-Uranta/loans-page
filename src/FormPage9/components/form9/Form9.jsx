@@ -80,6 +80,10 @@ const Form9 = () => {
              fontWeight:"bold",
              position:"relative",
              left:"10%",
+             display:"flex",
+             display:"flex",
+             justifyContent:"center",
+             alignItems:"center",
              paddingBottom:"2rem",
              backgroundColor:"transparent"}}> 
              <BsArrowLeftShort/> Back

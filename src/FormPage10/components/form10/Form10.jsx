@@ -74,6 +74,10 @@ const Form10 = () => {
      style={{fontSize:"1.3rem",
              fontWeight:"bold",
              position:"relative",
+             display:"flex",
+             
+             justifyContent:"center",
+             alignItems:"center",
              left:"10%",
              paddingBottom:"2rem",
              backgroundColor:"transparent"}}> 
