@@ -9,7 +9,7 @@ const Features = () => {
   return (
     <section id='features'>
    
-   <h2>Why Poorcred QuickLoans</h2>
+   <h2>Why Poorcredit QuickLoans</h2>
 
    <center>
    You can manage leads and sales with our tracking software,

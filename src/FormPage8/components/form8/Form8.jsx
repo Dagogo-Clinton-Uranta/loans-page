@@ -1,14 +1,85 @@
-import React from 'react'
+import React, {useEffect,useState} from 'react'
 import './form8.css'
 import { BsFillPatchCheckFill } from 'react-icons/bs'
 import BasicSelect from './BasicSelect'
+import { Link,useNavigate } from 'react-router-dom'
+import {BsArrowLeftShort} from 'react-icons/bs'
+
 
 
 const Form8 = () => {
+
+  const [loading,setLoading] = useState(false)
+  const [continueCondition,setContinueCondition] = useState(false)
+  const [formName,setFormName] = useState('')
+  const [recordedAddress,setRecordedAddress] = useState('')
+
+  const [licenseId,setLicenseId] = useState('')
+  const [timeAtBank,setTimeAtBank] = useState('')
+  
+  const [payementMethod,setPayementMethod] = useState('')
+  const [licenseIssuer,setLicenseIssuer] = useState('')
+
+   const navigate = useNavigate()
+  
+   
+   const savePage8 = () => {
+    setLoading(true)
+   sessionStorage.setItem("licenseId",licenseId)
+   sessionStorage.setItem("timeAtBank",timeAtBank)
+   sessionStorage.setItem("payementMethod",payementMethod)
+   sessionStorage.setItem("licenseIssuer",licenseIssuer)
+   
+   setLoading(false)
+   setTimeout(navigate('/page9'),1500)
+   }
+   
+   
+   useEffect(()=>{
+   
+     sessionStorage.getItem("firstName") !="null" && setFormName(sessionStorage.getItem("firstName"))
+     sessionStorage.getItem("address") !="null" && setRecordedAddress(sessionStorage.getItem("address"))
+     sessionStorage.getItem("licenseId") !="null" && setLicenseId(sessionStorage.getItem("licenseId"))
+     sessionStorage.getItem("timeAtBank") !="null" && setTimeAtBank(sessionStorage.getItem("timeAtBank"))
+     sessionStorage.getItem("licenseIssuer") !="null" && setLicenseIssuer(sessionStorage.getItem("licenseIssuer"))
+     sessionStorage.getItem("payementMethod") !="null" && setPayementMethod(sessionStorage.getItem("payementMethod"))
+   
+   },[])
+ 
+ 
+   useEffect(()=>{
+     if((licenseId !==null||"") && (timeAtBank !==null|| "")  && (licenseIssuer!==null|| "") &&  (payementMethod !==null|| "")){
+      setContinueCondition(true)
+     }
+ 
+     if(licenseId ==="" || timeAtBank === "" || licenseIssuer === "" || payementMethod === ""){
+       
+       setContinueCondition(false)
+     }
+ 
+ 
+   },
+   [licenseId,timeAtBank,licenseIssuer,payementMethod])
+
+
+   const back = ()=>{
+    navigate(-1)
+  }
+
   return (
     <section id='Form8'>
+      
+      <button onClick={back} 
+     style={{fontSize:"1.3rem",
+             fontWeight:"bold",
+             position:"relative",
+             left:"10%",
+             paddingBottom:"2rem",
+             backgroundColor:"transparent"}}> 
+             <BsArrowLeftShort/> Back
+             </button>
    
-   <h2>Thanks Alexander, Please help us verify your identity...</h2>
+   <h2>Thanks <span style={{color:"green"}}>{formName && formName}</span>{formName && ","} Please help us verify your identity...</h2>
    
    <div className="container Form8__container">
    
@@ -27,13 +98,13 @@ const Form8 = () => {
       
         <div>
        <label for="license">License</label>
-      <input type="text" id="license" name="license"/> 
+      <input type="text" id="license" name="license" value={licenseId} onChange={(e)=>{setLicenseId(e.target.value)}}/> 
       </div>
        
        
         <div>
       <label for="issuing_state">Issuing State</label>
-      <input type="text" id="issuing_state" name="issuing_state"/>
+      <input type="text" id="issuing_state" name="issuing_state" value={licenseIssuer} onChange={(e)=>{setLicenseIssuer(e.target.value)}}/>
       </div>
       </div>
 
@@ -57,11 +128,11 @@ TIP: Lenders and lending partners are more likely to fund a loan to an account w
       
        <fieldset id="groupPaytype">
         <div className='radioCover'>
-       <input type="radio" className='radio' name="groupPaytype"></input>Direct Deposit
+       <input type="radio" className='radio' name="groupPaytype" value={payementMethod} onChange={()=>{setPayementMethod("Direct Deposit")}}></input>Direct Deposit
        </div>
 
      <div className='radioCover'>
-     <input type="radio" className='radio' name="groupPaytype"></input>Paper Check
+     <input type="radio" className='radio' name="groupPaytype" value={payementMethod} onChange={()=>{setPayementMethod("Paper check")}}></input>Paper Check
      </div>
 
     </fieldset>
@@ -87,8 +158,9 @@ TIP: Lenders and lending partners are more likely to fund a loan to an account w
        <div className="formAnswer">
       
         <div>
-       <label for="first name">Months at Bank</label>
-       <BasicSelect/>
+       <label for="months_at_bank">Months at Bank</label>
+       <input type="text" id="months_at_bank" name="months_at_bank" value={timeAtBank} onChange={(e)=>{setTimeAtBank(e.target.value)}}/>
+       {/*<BasicSelect/>*/}
       </div>
        
        
@@ -99,9 +171,13 @@ TIP: Lenders and lending partners are more likely to fund a loan to an account w
     </div>
 
     <div className = "formContinue">
-        <button className="btn btn-primary">
-          CONTINUE
-          </button>
+    <button 
+        disabled={!continueCondition}
+        className={`btn-f ${continueCondition && `btn-primary`}`}
+        onClick ={savePage8}
+        >
+         {loading?"...loading" :"CONTINUE"}
+        </button>
        </div>
 
       

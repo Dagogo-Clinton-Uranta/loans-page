@@ -1,7 +1,7 @@
 import React from 'react'
 import './submitloan.css'
 import countPennies from '../../assets/counting-pennies.jpg'
-
+import { Link } from 'react-router-dom'
 
 const SubmitLoan = () => {
   return (
@@ -20,7 +20,9 @@ const SubmitLoan = () => {
 
         </p>
 
-        <button className="btn btn-primary">Get Started</button>
+        <Link to= {'/page2'}>
+       <button className='btn btn-primary'>Get Started</button>
+       </Link>
       </div>
 
     </div>

@@ -1,6 +1,7 @@
 import React from 'react'
 import './submitloan.css'
 import countPennies from '../../assets/counting-pennies.jpg'
+import {Link} from 'react-router-dom'
 
 
 const SubmitLoan = () => {
@@ -15,7 +16,7 @@ const SubmitLoan = () => {
          PersonalLoans.com is happy to provide help and support throughout your financial journey.
           You are welcome to <a href="/#">contact us with any questions</a> you may have about our process.
            Questions about a specific loan you have already agreed to should be taken directly
-            to the lender. <a href="/#">Get started</a> with PersonalLoans.com today!
+            to the lender. <Link to="/page2">Get started</Link> with PersonalLoans.com today!
         </p>
 
         <button className="btn btn-primary">Get Started</button>

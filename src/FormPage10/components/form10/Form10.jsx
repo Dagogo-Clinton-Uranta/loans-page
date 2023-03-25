@@ -1,12 +1,84 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import './form10.css'
 import { BsFillPatchCheckFill } from 'react-icons/bs'
 import BasicSelect from './BasicSelect'
+import { Link ,useNavigate} from 'react-router-dom'
+import {BsArrowLeftShort} from 'react-icons/bs'
 
 
 const Form10 = () => {
+
+  const [loading,setLoading] = useState(false)
+  const [continueCondition,setContinueCondition] = useState(false)
+  const [formName,setFormName] = useState('')
+  const [recordedAddress,setRecordedAddress] = useState('')
+ 
+  const [additionalLenders, setAdditionalLenders] = useState(false)
+  const [creditOffers,setCreditOffers] = useState(false)
+  const [agreeConsent,setAgreeConsent] = useState(false)
+  
+
+   
+   const savePage10= () => {
+    setLoading(true)
+   sessionStorage.setItem("creditOffers",creditOffers)
+   sessionStorage.setItem("agreeConsent",agreeConsent)
+   sessionStorage.setItem("additionalLenders",additionalLenders)
+  
+   
+   setLoading(false)
+   setTimeout(navigate('/page11'),1500)
+   }
+   
+   
+   useEffect(()=>{
+   
+     /*sessionStorage.getItem("firstName") !="null" && setFormName(sessionStorage.getItem("firstName"))
+     sessionStorage.getItem("address") !="null" && setRecordedAddress(sessionStorage.getItem("address"))
+     sessionStorage.getItem("licenseIssuer") !="null" && setLicenseIssuer(sessionStorage.getItem("licenseIssuer"))*/
+
+     sessionStorage.getItem("creditOffers") !="null" && setCreditOffers(sessionStorage.getItem("creditOffers"))
+     sessionStorage.getItem("agreeConsent") !="null" && setAgreeConsent(sessionStorage.getItem("agreeConsent"))
+   
+     sessionStorage.getItem("additionalLenders") !="null" && setAdditionalLenders(sessionStorage.getItem("additionalLenders"))
+   
+   },[])
+ 
+ 
+   useEffect(()=>{
+     if((creditOffers) && (agreeConsent)   &&  (additionalLenders )){
+      setContinueCondition(true)
+     }
+ 
+     if(!creditOffers || !agreeConsent || !additionalLenders ){
+       
+       setContinueCondition(false)
+     }
+ 
+ 
+   },
+   [creditOffers,agreeConsent,additionalLenders])
+
+  
+
+ const navigate = useNavigate()
+  const back = ()=>{
+    navigate(-1)
+  }
+ 
+ 
   return (
     <section id='Form10'>
+   
+   <button onClick={back} 
+     style={{fontSize:"1.3rem",
+             fontWeight:"bold",
+             position:"relative",
+             left:"10%",
+             paddingBottom:"2rem",
+             backgroundColor:"transparent"}}> 
+             <BsArrowLeftShort/> Back
+             </button>
    
    <h2>Last questions, almost done!</h2>
    
@@ -21,7 +93,7 @@ const Form10 = () => {
        <div className="formAnswerSingle">
       
        <div className='radioCover9'>
-     <input type="checkbox" className='radio' name="additionalLenders"></input>Yes, accept additional lenders
+     <input type="checkbox" className='radio' name="additionalLenders" onChange={()=>{setAdditionalLenders(!additionalLenders)}}></input>Yes, accept additional lenders
      </div>
          <p>Accessing our extended network of additional lenders may increase 
           your chances of receiving a loan offer because more lenders will 
@@ -48,7 +120,7 @@ const Form10 = () => {
        <div className="formAnswerSingle">
       
        <div className='radioCover9'>
-     <input type="checkbox" className='radio' name="otherOffers"></input>Yes, other credit-related offers
+     <input type="checkbox" className='radio' name="otherOffers" onChange={()=>{setCreditOffers(!creditOffers)}}></input>Yes, other credit-related offers
      </div>
        
        <p>
@@ -81,7 +153,7 @@ const Form10 = () => {
        <div className="formAnswerSingle">
       
        <div className='radioCover9'>
-     <input type="checkbox" className='radio' name="iAgree"></input>I agree
+     <input type="checkbox" className='radio' name="iAgree" onChange={()=>{setAgreeConsent(!agreeConsent)}}></input>I agree
      </div>
        
        <p>
@@ -99,9 +171,13 @@ I authorize PersonalLoans.com to use my information to create an account that wi
     </div>
 
     <div className = "formContinue">
-        <button className="btn btn-primary">
-          SUBMIT
-          </button>
+    <button 
+        disabled={!continueCondition}
+        className={`btn-f ${continueCondition && `btn-primary`}`}
+        onClick ={savePage10}
+        >
+         {loading?"...loading" :"CONTINUE"}
+        </button>
        </div>
 
    </div>

@@ -1,4 +1,5 @@
 import React ,{useState}from 'react'
+import { Link } from 'react-router-dom'
 import './header.css'
 
 import LoanSlider from './LoanSlider'
@@ -76,7 +77,9 @@ const Header = () => {
       
        <LoanSlider value={input} setInput={handleChange}/>
 
-       <button className="btn btn-primary btn-place">Get Started</button>
+       <Link to= {'/page2'}>
+       <button className='btn btn-primary '>Get Started</button>
+       </Link>
 
      </div>
      <div className='clip-path-top-left-1'></div>

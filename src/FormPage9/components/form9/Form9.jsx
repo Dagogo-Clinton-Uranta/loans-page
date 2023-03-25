@@ -1,12 +1,90 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import './form9.css'
 import { BsFillPatchCheckFill } from 'react-icons/bs'
 import BasicSelect from './BasicSelect'
+import { Link,useNavigate } from 'react-router-dom'
+import {BsArrowLeftShort} from 'react-icons/bs'
 
 
 const Form9 = () => {
+  
+  const [loading,setLoading] = useState(false)
+  const [continueCondition,setContinueCondition] = useState(false)
+  const [formName,setFormName] = useState('')
+  const [recordedAddress,setRecordedAddress] = useState('')
+  const [creditScore, setCreditScore] = useState('')
+
+  const [carPaidOff,setCarPaidOff] = useState('')
+  const [unsecuredLoans,setUnsecuredLoans] = useState('')
+  
+ 
+
+
+   const navigate = useNavigate()
+  
+   
+   const savePage9 = () => {
+    setLoading(true)
+   sessionStorage.setItem("carPaidOff",carPaidOff)
+   sessionStorage.setItem("unsecuredLoans",unsecuredLoans)
+   sessionStorage.setItem("creditScore",creditScore)
+  
+   
+   setLoading(false)
+   setTimeout(navigate('/page10'),1500)
+   }
+   
+   
+   useEffect(()=>{
+   
+     /*sessionStorage.getItem("firstName") !="null" && setFormName(sessionStorage.getItem("firstName"))
+     sessionStorage.getItem("address") !="null" && setRecordedAddress(sessionStorage.getItem("address"))
+     sessionStorage.getItem("licenseIssuer") !="null" && setLicenseIssuer(sessionStorage.getItem("licenseIssuer"))*/
+
+     sessionStorage.getItem("carPaidOff") !="null" && setCarPaidOff(sessionStorage.getItem("carPaidOff"))
+     sessionStorage.getItem("unsecuredLoans") !="null" && setUnsecuredLoans(sessionStorage.getItem("unsecuredLoans"))
+   
+     sessionStorage.getItem("creditScore") !="null" && setCreditScore(sessionStorage.getItem("creditScore"))
+   
+   },[])
+ 
+ 
+   useEffect(()=>{
+     if((carPaidOff !==null||"") && (unsecuredLoans !==null|| "")   &&  (creditScore !==null|| "")){
+      setContinueCondition(true)
+     }
+ 
+     if(carPaidOff ==="" || unsecuredLoans === ""  || creditScore === ""){
+       
+       setContinueCondition(false)
+     }
+ 
+ 
+   },
+   [carPaidOff,unsecuredLoans,creditScore])
+
+  
+   const back = ()=>{
+    navigate(-1)
+  }
+  
+  
+  
+  
+  
   return (
     <section id='Form9'>
+
+<button onClick={back} 
+     style={{fontSize:"1.3rem",
+             fontWeight:"bold",
+             position:"relative",
+             left:"10%",
+             paddingBottom:"2rem",
+             backgroundColor:"transparent"}}> 
+             <BsArrowLeftShort/> Back
+             </button>
+   
    
    <h2>Almost there, let's do this!</h2>
    
@@ -26,7 +104,8 @@ const Form9 = () => {
       
         <div>
        <label for="credit score">Credit Score</label>
-       <BasicSelect/>
+       <input type="text" id="credit_score" name="credit_score" value={creditScore} onChange={(e)=>{setCreditScore(e.target.value)}}/>
+       {/*<BasicSelect/>*/}
       </div>
        
        
@@ -48,8 +127,9 @@ const Form9 = () => {
        <div className="formAnswerSingle">
       
         <div>
-       <label for="first name">Date of Birth</label>
-       <BasicSelect/>
+       <label for="unsecured_loans">Unsecured Debt</label>
+       {/*<BasicSelect/>*/}
+       <input type="text" id="unsecured_loans" name="unsecured_loans" value={unsecuredLoans} onChange={(e)=>{setUnsecuredLoans(e.target.value)}}/>
       </div>
        
        
@@ -76,15 +156,15 @@ const Form9 = () => {
         
        <fieldset id="groupCarPaidOff">
         <div className='radioCover9'>
-       <input type="radio" className='radio' name="groupCarPaidOff"></input>Yes, and I want to see title loan options
+       <input type="radio" className='radio' name="groupCarPaidOff" onChange={()=>{setCarPaidOff("Yes and title loans")}}></input>Yes, and I want to see title loan options
        </div>
 
      <div className='radioCover9'>
-     <input type="radio" className='radio' name="groupCarPaidOff"></input>Yes, but don't show title loan options
+     <input type="radio" className='radio' name="groupCarPaidOff" onChange={()=>{setCarPaidOff("Yes,but no title loans")}}></input>Yes, but don't show title loan options
      </div>
 
      <div className='radioCover9'>
-     <input type="radio" className='radio' name="groupCarPaidOff"></input>No, I don't own a car that is paid off
+     <input type="radio" className='radio' name="groupCarPaidOff" onChange={()=>{setCarPaidOff("No")}}></input>No, I don't own a car that is paid off
      </div>
 
     </fieldset>
@@ -96,9 +176,13 @@ const Form9 = () => {
     </div>
 
     <div className = "formContinue">
-        <button className="btn btn-primary">
-          CONTINUE
-          </button>
+    <button 
+        disabled={!continueCondition}
+        className={`btn-f ${continueCondition && `btn-primary`}`}
+        onClick ={savePage9}
+        >
+         {loading?"...loading" :"CONTINUE"}
+        </button>
        </div>
 
    </div>

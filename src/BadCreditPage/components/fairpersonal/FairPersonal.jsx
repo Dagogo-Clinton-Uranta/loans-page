@@ -2,7 +2,7 @@ import React from 'react'
 import './fairpersonal.css'
 import { BsFillPatchCheckFill } from 'react-icons/bs'
 import fairpersonal from '../../assets/fairpersonal.jpg'
-
+import {Link} from 'react-router-dom'
 
 const FairPersonal = () => {
   return (
@@ -22,7 +22,9 @@ const FairPersonal = () => {
        </p>
   
        <center>
+        <Link to='/page2'>
        <button  className='btn btn-primary btn-ammend'>Get Started</button>
+       </Link>
        </center>
       </div>
 

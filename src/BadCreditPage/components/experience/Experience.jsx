@@ -1,6 +1,7 @@
 import React from 'react'
 import './experience.css'
 import { BsFillPatchCheckFill } from 'react-icons/bs'
+import {Link} from 'react-router-dom'
 
 const Experience = () => {
   return (
@@ -69,7 +70,7 @@ const Experience = () => {
 
        <div className="experience__backend">
        
-       <h3>Learn about other credit-related product</h3>
+       <h3>Learn about other credit-related products</h3>
         <p>
           We will present you with offers for additional
          credit-related goods and services when you use our
@@ -86,7 +87,9 @@ const Experience = () => {
 
      
       <center>
+        <Link to="/page2">
        <button className='btn btn-primary btn-pos'>Get Started</button>
+       </Link>
       </center>
 
     </section>

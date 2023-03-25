@@ -2,7 +2,7 @@ import React ,{useState}from 'react'
 import './header.css'
 
 import LoanSlider from './LoanSlider'
-
+import {Link} from 'react-router-dom'
 
 
 const Header = () => {
@@ -75,9 +75,9 @@ const Header = () => {
        </div>
       
        <LoanSlider value={input} setInput={handleChange}/>
-
+        <Link to="/page2">
        <button className="btn btn-primary btn-place">Get Started</button>
-
+       </Link>
      </div>
      <div className='clip-path-top-left-1'></div>
      <div className='clip-path-bottom-left-1'></div>

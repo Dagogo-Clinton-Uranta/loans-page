@@ -1,6 +1,7 @@
 import React from 'react'
 import './submitloan.css'
 import countPennies from '../../assets/counting-pennies.jpg'
+import { Link } from 'react-router-dom'
 
 
 const SubmitLoan = () => {
@@ -12,7 +13,7 @@ const SubmitLoan = () => {
       <h2>Poorcredit.com</h2>
 
          <p>
-         <a href="/#">Fill out a loan request form</a> with PersonalLoans.com
+         <a href="/#">Fill out a loan request form</a> with poorcreditquickloans.com
           today to see if you qualify.  <a href="/#">Contact us</a> with any
            questions pertaining to the process.
             For questions about your specific loan,
@@ -20,7 +21,9 @@ const SubmitLoan = () => {
 
         </p>
 
-        <button className="btn btn-primary">Get Started</button>
+        <Link to= {'/page2'}>
+       <button className='btn btn-primary '>Get Started</button>
+       </Link>
       </div>
 
     </div>

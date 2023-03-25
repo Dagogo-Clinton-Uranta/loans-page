@@ -1,14 +1,81 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import './form4.css'
 import { BsFillPatchCheckFill } from 'react-icons/bs'
 import BasicSelect from './BasicSelect'
+import { Link,useNavigate } from 'react-router-dom'
+import {BsArrowLeftShort} from 'react-icons/bs'
 
 
 const Form4 = () => {
+
+  const [email,setEmail] = useState('')
+  const [phoneNumber,setPhoneNumber] = useState('')
+  
+  const [formName,setFormName] = useState('')
+  const [loading,setLoading] = useState(false)
+ const [continueCondition,setContinueCondition] = useState(false)
+
+  const navigate = useNavigate()
+ 
+  
+  const savePage4 = () => {
+   setLoading(true)
+  sessionStorage.setItem("email",email)
+  sessionStorage.setItem("phoneNumber",phoneNumber)
+  
+  setLoading(false)
+  setTimeout(navigate('/page5'),1500)
+  }
+  
+  
+  useEffect(()=>{
+  
+    sessionStorage.getItem("firstName") !="null" && setFormName(sessionStorage.getItem("firstName"))
+    sessionStorage.getItem("email") !="null" && setEmail(sessionStorage.getItem("email"))
+    sessionStorage.getItem("phoneNumber") !="null" && setPhoneNumber(sessionStorage.getItem("phoneNumber"))
+  
+  },[])
+
+
+  useEffect(()=>{
+    if(email !=="null"||" " && phoneNumber !=="null"|| " "){
+      console.log(email)
+      console.log(phoneNumber)
+      setContinueCondition(true)
+    }
+
+    if(email ==="" || phoneNumber === ""){
+      
+      setContinueCondition(false)
+    }
+
+
+  },
+  [email,phoneNumber])
+
+
+
+  const back = ()=>{
+    navigate(-1)
+  }
+
+
+
   return (
     <section id='Form4'>
+
+<button onClick={back} 
+     style={{fontSize:"1.3rem",
+             fontWeight:"bold",
+             position:"relative",
+             left:"10%",
+             paddingBottom:"2rem",
+             backgroundColor:"transparent"}}> 
+             <BsArrowLeftShort/> Back
+             </button>
    
-   <h2>Alexander, we're here to help with your Loan request.</h2>
+   
+   <h2><span style={{color:"green"}}>{formName && formName}</span>{formName && ","} we're here to help with your Loan request.</h2>
    
    <div className="container Form4__container">
    
@@ -26,7 +93,7 @@ const Form4 = () => {
       
         <div>
        <label for="email">Email</label>
-      <input type="text" id="email" name="email"/> 
+      <input type="text" id="email" name="email" value={email} onChange={(e)=>{setEmail(e.target.value)}}/> 
       </div>
 
        <p>
@@ -38,7 +105,7 @@ const Form4 = () => {
        
         <div>
       <label for="phone_number2">Phone Number  (optional)</label>
-      <input type="text" id="phone-number" name="phone_number"/>
+      <input type="text" id="phone-number" name="phone_number" value={phoneNumber} onChange={(e)=>{setPhoneNumber(e.target.value)}}/>
       </div>
 
       Entering your phone number and clicking "Continue" is your e-signature instructing us and up to
@@ -54,9 +121,13 @@ const Form4 = () => {
     
 
     <div className = "formContinue">
-        <button className="btn btn-primary">
-          CONTINUE
-          </button>
+    <button 
+        disabled={!continueCondition}
+        className={`btn-f ${continueCondition && `btn-primary`}`}
+        onClick ={savePage4}
+        >
+         {loading?"...loading" :"CONTINUE"}
+        </button>
        </div>
 
    </div>

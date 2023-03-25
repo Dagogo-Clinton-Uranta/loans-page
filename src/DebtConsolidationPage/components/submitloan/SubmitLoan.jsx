@@ -1,7 +1,7 @@
 import React from 'react'
 import './submitloan.css'
 import countPennies from '../../assets/counting-pennies.jpg'
-
+import {Link} from 'react-router-dom'
 
 const SubmitLoan = () => {
   return (
@@ -19,8 +19,9 @@ const SubmitLoan = () => {
            if one of our lending partners has an offer for you! Learn more about
             how to consolidate debt with <a href="/#"> Poorcreditquickloans.com</a> today!
         </p>
-
+        <Link to={'/page2'}>
         <button className="btn btn-primary">Get Started</button>
+        </Link>
       </div>
 
     </div>

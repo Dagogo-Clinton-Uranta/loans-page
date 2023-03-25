@@ -12,7 +12,7 @@ const Features = () => {
    
 
    <center style={{maxWidth:"70%", margin:"0 auto"}}>
-   <h2>Why Poorcred QuickLoans</h2>
+   <h2>Why Poorcredit QuickLoans</h2>
    You can manage leads and sales with our tracking software,
     administer your affiliate program automatically, 
     and integrate PayPal seamlessly.

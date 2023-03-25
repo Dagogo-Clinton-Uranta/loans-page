@@ -1,13 +1,75 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import './form11.css'
 import { BsFillPatchCheckFill } from 'react-icons/bs'
 import BasicSelect from './BasicSelect'
 import samplerouting from './samplerouting.png'
+import { Link,useNavigate } from 'react-router-dom'
+import {BsArrowLeftShort} from 'react-icons/bs'
 
 
 const Form11 = () => {
+
+  const [loading,setLoading] = useState(false)
+  const [continueCondition,setContinueCondition] = useState(false)
+
+ const [accountNumber,setAccountNumber] = useState('')
+ const [routingNumber,setRoutingNumber] = useState('')
+const navigate = useNavigate()
+
+const back = ()=>{
+  navigate(-1)
+}
+
+
+ useEffect(()=>{
+   
+  /*sessionStorage.getItem("firstName") !="null" && setFormName(sessionStorage.getItem("firstName"))
+  sessionStorage.getItem("address") !="null" && setRecordedAddress(sessionStorage.getItem("address"))
+  sessionStorage.getItem("licenseIssuer") !="null" && setLicenseIssuer(sessionStorage.getItem("licenseIssuer"))*/
+
+  sessionStorage.getItem("accountNumber") !="null" && setAccountNumber(sessionStorage.getItem("accountNumber"))
+  sessionStorage.getItem("routingNumber") !="null" && setRoutingNumber(sessionStorage.getItem("routingNumber"))
+
+
+},[])
+
+
+useEffect(()=>{
+  if((accountNumber !==null|| "")   &&  (routingNumber !==null|| "")){
+   setContinueCondition(true)
+  }
+
+  if(accountNumber ==="" || routingNumber === ""){
+    
+    setContinueCondition(false)
+  }
+
+
+},
+[accountNumber,routingNumber])
+
+ const pushToApi = () => {
+  setLoading(true)
+ 
+
+ 
+ setLoading(false)
+
+ }
+
+
   return (
     <section id='Form11'>
+
+     <button onClick={back} 
+     style={{fontSize:"1.3rem",
+             fontWeight:"bold",
+             position:"relative",
+             left:"10%",
+             paddingBottom:"2rem",
+             backgroundColor:"transparent"}}> 
+             <BsArrowLeftShort/> Back
+             </button>
    
    <h2>Alexander, we have several partners interested in providing you funding.</h2>
    
@@ -16,28 +78,17 @@ const Form11 = () => {
       <div className="Form11__frontend">
        
        <div className="formQuestion"> 
-       <h4>What is your driver's license or state ID number? </h4>
+       <h4>Submit below to complete your loan request. </h4>
        <p>
-       Enter your driver's license ID or your state ID number.<br/>
-
-Lenders and lending partners must be able to verify your identity when reviewing your request.
+       We have additional lenders and lending partners that
+        may still offer you a loan of $1500 or under. These 
+        loan amounts, interest rates and repayment terms may 
+        differ from what is listed on our site.
        </p>
 
        </div>
 
-       <div className="formAnswerSingle">
-      
-        <div>
-       <label for="license">License</label>
-      <input type="text" id="license" name="license"/> 
-      </div>
-       
-       
-        <div>
-      <label for="Issuing_State">Issuing State</label>
-      <input type="text" id="Issuing_State" name="Issuing_State"/>
-      </div>
-      </div>
+     
 
 
     </div>
@@ -46,26 +97,21 @@ Lenders and lending partners must be able to verify your identity when reviewing
     <div className="Form11__frontend">
        
        <div className="formQuestion"> 
-       <h4>Which Bank Account Will you receive your loan ? </h4>
-       <p>
-       Please provide accurate information of where you would like
-        your funds deposited. We use data encryption to protect your 
-        information when you submit on our website.
-       </p>
-
+       <h4>Other credit-related offers</h4>
+      
        </div>
 
        <div className="formAnswerSingle">
       
         <div>
-       <label for="license">ABA/Routing Number</label>
-      <input type="text" id="license" name="license"/> 
+       <label for="routing_number">ABA/Routing Number</label>
+      <input type="text" id="routing_number" name="routing_number" value={routingNumber} onChange={(e)=>{setRoutingNumber(e.target.value);sessionStorage.setItem("routingNumber",e.target.value)}}/> 
       </div>
        
        
         <div>
-      <label for="Issuing_State">Account Number</label>
-      <input type="text" id="Issuing_State" name="Issuing_State"/>
+      <label for="account_number">Account Number</label>
+      <input type="text" id="account_number" name="account_number" value={accountNumber} onChange={(e)=>{setAccountNumber(e.target.value);sessionStorage.setItem("accountNumber",e.target.value)}}/>
       </div>
       </div>
 
@@ -80,9 +126,13 @@ Lenders and lending partners must be able to verify your identity when reviewing
 
 
     <div className = "formContinue" >
-        <button className="btn btn-primary">
-          SUBMIT
-          </button>
+    <button 
+        disabled={!continueCondition}
+        className={`btn-f ${continueCondition && `btn-primary`}`}
+        onClick ={pushToApi}
+        >
+         {loading?"...loading" :"SUBMIT"}
+        </button>
        </div>
 
    </div>

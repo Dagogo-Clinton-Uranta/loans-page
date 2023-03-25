@@ -2,6 +2,7 @@ import React from 'react'
 import './fairpersonal.css'
 import { BsFillPatchCheckFill } from 'react-icons/bs'
 import fairpersonal from '../../assets/fairpersonal.jpg'
+import { Link } from 'react-router-dom'
 
 
 const FairPersonal = () => {
@@ -22,7 +23,9 @@ const FairPersonal = () => {
        </p>
   
        
-       <button className='btn btn-primary'>Get Started</button>
+       <Link to= {'/page2'}>
+       <button className='btn btn-primary '>Get Started</button>
+       </Link>
       </div>
 
        <div className="fairpersonal__backend">
