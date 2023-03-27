@@ -2,8 +2,8 @@
     /* height:100vh;
      padding-top: 7rem;
      overflow:visible;*/
-      padding-top: 1rem;
-     
+      padding-top: 0rem ;
+      margin-top: -6rem;  
    
  }
  
@@ -176,6 +176,13 @@
     width: 100%; 
     margin:0 auto;
  }
+
+
+ #submitloan {
+    
+      margin-top: -4rem;  
+   
+ }
  
   }
   
@@ -191,5 +198,11 @@
          display:none;
       }
    
+
+      #submitloan {
+      
+          margin-top: -2rem;  
+       
+     }
    }
  

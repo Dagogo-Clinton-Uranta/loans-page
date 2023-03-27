@@ -35,7 +35,7 @@ const Footer = () => {
         <li><a href="/econsent">E-consent</a></li>
         <li><a href="/addisclosure">Ad Disclosure</a></li>
         <li><a href="/thirdparties">Third Parties</a></li>
-        <li><a href="/#">Credit Authorization</a></li>
+        <li><a href="/creditauthorization">Credit Authorization</a></li>
         <li><a href="/#">California Residents:Do </a></li>
         <li><a href="/#"> Not Sell My Personal</a></li>
         <li><a href="/#">Information</a></li>

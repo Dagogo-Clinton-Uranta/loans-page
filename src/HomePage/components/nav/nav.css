@@ -4,7 +4,7 @@ nav {
     display: block;
     padding:0.7rem 1.7rem;
     position:relative;
-    z-index: 2;
+    z-index: 1000 !important;
 
     /*another centering style when youdont know the 
     exact dimensions of the container element */

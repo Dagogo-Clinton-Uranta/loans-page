@@ -162,8 +162,23 @@ TIP: Lenders and lending partners are more likely to fund a loan to an account w
       
         <div>
        <label for="months_at_bank">Months at Bank</label>
-       <input type="text" id="months_at_bank" name="months_at_bank" value={timeAtBank} onChange={(e)=>{setTimeAtBank(e.target.value)}}/>
-       {/*<BasicSelect/>*/}
+       <input type="text" id="months_at_bank" name="months_at_bank" value={timeAtBank} style={{opacity:"0",height:"0%"}}/>
+       <select value={timeAtBank}  onChange={(event) => setTimeAtBank(event.target.value)}>
+                  <option value={''}>select</option>
+                <option value={1}>1 Month</option>
+                <option value={2}>2 Months</option>
+                <option value={3}>3 Months</option>
+                <option value={4}>4 Months</option>
+                <option value={5}>5 Months</option>
+                <option value={6}>6 Months</option>
+                <option value={7}>7 Months</option>
+                <option value={8}>8 Months</option>
+                <option value={9}>9 Months</option>
+                <option value={10}>10 Months</option>
+                <option value={11}>11 Months</option>
+                <option value={12}>12+ Months</option>
+              
+            </select>
       </div>
        
        

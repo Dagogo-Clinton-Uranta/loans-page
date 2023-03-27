@@ -170,7 +170,7 @@
  @media screen and (max-width:1500px) {
     
     .about__container {
-       flex-direction: column;
+     
        gap:4rem;
         
     }

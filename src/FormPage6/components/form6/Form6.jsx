@@ -103,7 +103,16 @@ const Form6 = () => {
       
         <div>
        <label for="incomeSource">Income Source</label>
-      <input type="text" id="incomeSource" name="incomeSource"  value={incomeSource} onChange={(e)=>{setIncomeSource(e.target.value)}} /> 
+      <input type="text" id="incomeSource" name="incomeSource"  value={incomeSource} style={{height:"0%",opacity:"0"}} /> 
+
+      <select value={setIncomeSource}  onChange={(event) => setIncomeSource(event.target.value)}>
+                  <option value={''}>select</option>
+                <option value={'employment'}>Job employment</option>
+                <option value={'selfemployment'}>Self Employed</option>
+                <option value={'benefits'}>Benefits or Alimony</option>
+                <option value={'unemployed'}>Other</option> 
+              
+            </select>
       </div>
        
        
@@ -127,7 +136,18 @@ const Form6 = () => {
       
         <div>
        <label for="time_employed">Time Employed(years)</label>
-       <input type="text" id="time_employed" name="time_employed"  value={timeEmployed} onChange={(e)=>{setTimeEmployed(e.target.value)}}/>  
+       <input type="text" id="time_employed" name="time_employed"  value={timeEmployed}  style={{height:"0%",opacity:"0"}}/>  
+       <select value={timeEmployed}  onChange={(event) => setTimeEmployed(event.target.value)}>
+                  <option value={''}>select</option>
+                <option value={1}>1 Year</option>
+                <option value={2}>2 Years</option>
+                <option value={3}>3 Years</option>
+                <option value={4}>4 Years</option>
+                <option value={5}>5 Years</option>
+                <option value={6}>6+ Years</option>
+                <option value={0}>Unemployed</option>
+                 
+            </select>
       </div>
        
        
@@ -150,9 +170,17 @@ const Form6 = () => {
       
         <div>
        <label for="payment_freq">I get paid</label>
-       <input type="text" id="payment_freq" name="payment_freq"  value={paymentFreq} onChange={(e)=>{setPaymentFreq(e.target.value)}}/> 
+       <input type="text" id="payment_freq" name="payment_freq"  value={paymentFreq} style={{height:"0%",opacity:"0"}}/> 
        
-       {/*<BasicSelect/>*/}
+       <select value={paymentFreq}  onChange={(event) => setPaymentFreq(event.target.value)}>
+                   <option value={''}>select</option>
+                  <option value={'weekly'}>Weekly - paid every 7 days</option>
+                <option value={'biweekly'}>Every 2 weeks -(Every 14 days) </option>
+                <option value={'monthly'}>Monthly (paid once a month)</option>
+                <option value={'twicemonthly'}>Twice a month</option>
+          
+              
+            </select>
       </div>
        
        

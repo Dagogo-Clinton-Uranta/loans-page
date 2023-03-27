@@ -95,11 +95,29 @@
    
    }
 
+
+   .formAnswer select{
+    border:var(--separator-line);
+    border-radius:0.2rem;
+    height:55px;
+    width:100%;
+   
+   }
+
+
+
    .formAnswer input:hover {
     background: transparent;
     border-color:var(--color-primary-variant);
     
     cursor:default;
+}
+
+.formAnswer select:hover {
+  background: transparent;
+  border-color:var(--color-primary-variant);
+  
+  cursor:default;
 }
 
 .formAnswerSingle{
@@ -120,11 +138,30 @@
   
   }
 
+  .formAnswerSingle select{
+    border:var(--separator-line);
+    border-radius:0.2rem;
+    height:55px;
+    width:80%;
+    display: block;
+ 
+    margin-bottom: 1rem;
+   
+   }
+
   .formAnsweSingle input:hover {
    background: transparent;
    border-color:var(--color-primary-variant);
    
    cursor:default;
+}
+
+
+.formAnsweSingle select:hover {
+  background: transparent;
+  border-color:var(--color-primary-variant);
+  
+  cursor:default;
 }
 
 
@@ -183,7 +220,22 @@
         width:95%;
        }
 
+        .formAnswer select{
+        margin-left: 15px;
+        width:95%;
+       }
+
        .formAnswerSingle input{
+        border:var(--separator-line);
+        border-radius:0.2rem;
+        height:55px;
+        width:95%;
+        display: block;
+       
+       }
+
+
+         .formAnswerSingle select{
         border:var(--separator-line);
         border-radius:0.2rem;
         height:55px;

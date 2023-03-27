@@ -164,13 +164,24 @@
  @media screen and (max-width:1500px) {
     
     .about__container {
-       flex-direction: column;
+      
        gap:4rem;
         
     }
  
  
   }
+
+   /* ======================== MEDIA QUERIES FOR HEADER CHANGING TO COLUMN DISPLAY ======================*/
+
+ @media screen and (max-width:1300px) {
+
+    .about__container {
+        flex-direction: column !important;
+        align-items: center;
+    }
+    
+ }
  
  /* ======================== MEDIA QUERIES FOR about (MEDIUM DEVICES) ======================*/
  

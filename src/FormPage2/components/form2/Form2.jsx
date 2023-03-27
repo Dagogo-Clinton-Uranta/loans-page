@@ -154,7 +154,24 @@ const back = ()=>{
         <div>
        <label for="first name">Loan Reason</label>
 
-       <input type="text" id="javascript" name="fav_language" value={loanReason} onChange={(e)=>setLoanReason(e.target.value)}/> 
+       <input type="text" id="javascript" name="fav_language" value={loanReason} style={{opacity:"0",height:"0%"}} />
+       <select value={loanReason}  onChange={(event) => setLoanReason(event.target.value)}>
+                  <option value={''}>select</option>
+                <option value={'debtConsolidation'}>debt consolidation</option>
+                <option value={'emergencySituation'}>emergency situation</option>
+                <option value={'autoRepair'}>autoRepair</option>
+                <option value={'autoPurchase'}>auto purchase</option>
+                <option value={'moving'}>moving</option>
+                <option value={'homeImprovement'}>home improvement</option>
+                <option value={'medical'}>medical</option>
+                <option value={'business'}>busines</option>
+                <option value={'vacation'}>vacation</option>
+                <option value={'rentOrMortgage'}>rent or mortgage</option>
+                <option value={'wedding'}>wedding</option>
+                <option value={'majorPurchase'}>major purchase</option>
+                <option value={'other'}>other</option>
+              
+            </select>
       </div>
        
        

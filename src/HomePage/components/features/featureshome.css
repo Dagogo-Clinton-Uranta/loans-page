@@ -9,8 +9,7 @@
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap:2rem;
-    margin-top: 3rem;
-    
+    margin-top: 4rem !important;   
    
 }
 
@@ -80,7 +79,7 @@
      position: relative;
      top:-17%;
      left:-20%;
-     z-index:1;
+     z-index:0 !;
      /*box position*/
 }
 

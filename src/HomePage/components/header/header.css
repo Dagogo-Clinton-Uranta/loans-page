@@ -261,7 +261,7 @@ z-index: -1;
 @media screen and (max-width:1500px) {
    
     .header__container-1 {
-        flex-direction: column;
+        
         align-items: center;
     }
 
@@ -294,6 +294,17 @@ z-index: -1;
    
 
  }
+
+  /* ======================== MEDIA QUERIES FOR HEADER CHANGING TO COLUMN DISPLAY ======================*/
+
+ @media screen and (max-width:1300px) {
+
+    .header__container-1 {
+        flex-direction: column !important;
+        align-items: center;
+    }
+    
+ }
  
 
  /* ======================== MEDIA QUERIES FOR HEADER (MEDIUM DEVICES) ======================*/
@@ -316,7 +327,10 @@ z-index: -1;
   
     }
 
-   
+    .header__container-1 {
+        flex-direction: column !important;
+        align-items: center;
+    }
 
 
 
@@ -327,6 +341,7 @@ z-index: -1;
  /* ======================== MEDIA QUERIES FOR HEADER (KINDA SMALL DEVICES) ======================*/
 
 @media screen and (max-width:1102px) {
+
    
     
     .clip-path-bottom-left-1{
@@ -376,6 +391,10 @@ z-index: -1;
     .header__container-1 {
         padding-top: 8rem; /*THIS IS WHERE U(DAGOGO) PUSHED THE HEADER DOWN FOR SMALLER SCREENS*/
     }
+
+   
+
+        
  
  }
  

@@ -108,8 +108,16 @@ const Form9 = () => {
       
         <div>
        <label for="credit score">Credit Score</label>
-       <input type="text" id="credit_score" name="credit_score" value={creditScore} onChange={(e)=>{setCreditScore(e.target.value)}}/>
-       {/*<BasicSelect/>*/}
+       <input type="text" id="credit_score" name="credit_score" value={creditScore} style={{height:"0%", opacity:"0"}}/>
+       <select value={creditScore}  onChange={(event) => setCreditScore(event.target.value)}>
+                  <option value={''}>select</option>
+                <option value={'excellent'}>850 -800</option>
+                <option value={'good'}>799 - 670</option>
+                <option value={'fair'}>669 -580</option>
+                <option value={'poor'}>579 - 300</option>
+                <option value={'not sure'}>not sure</option>
+                  
+            </select>
       </div>
        
        
@@ -131,7 +139,7 @@ const Form9 = () => {
        <div className="formAnswerSingle">
       
         <div>
-       <label for="unsecured_loans">Unsecured Debt</label>
+       <label for="unsecured_loans">Unsecured Debt(amount in dollars)</label>
        {/*<BasicSelect/>*/}
        <input type="text" id="unsecured_loans" name="unsecured_loans" value={unsecuredLoans} onChange={(e)=>{setUnsecuredLoans(e.target.value)}}/>
       </div>

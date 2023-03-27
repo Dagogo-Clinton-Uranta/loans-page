@@ -39,6 +39,7 @@
 .personal__headerfastrequirements li{
     list-style: circle;
     padding:1rem;
+    margin-left: 0.5rem;
 }
 
 .headerCTA{

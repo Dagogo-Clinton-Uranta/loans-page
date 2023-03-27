@@ -42,7 +42,7 @@ const Header = () => {
 
            <div className = "selectedConsent">
            <input type="radio"  checked="checked"/>
-             <p>To the <a href="">Privacy Policy</a>, <a href="/#">Terms of Use</a>, <a href="/#">Ad Disclosure</a>, <a href="/#">Credit Authorization</a>, <a href="/#">Rates & Fees</a>, <a href="/#">Responsible Lending</a>, and <a href="/#">E-Consent</a>.</p>
+             <p>To the <a href="/privacypolicy">Privacy Policy</a>, <a href="/termsofuse">Terms of Use</a>, <a href="/addisclosure">Ad Disclosure</a>, <a href="/creditauthorization">Credit Authorization</a>, <a href="/ratesandfees">Rates & Fees</a>, <a href="#">Responsible Lending</a>, and <a href="/econsent">E-Consent</a>.</p>
            </div>
          </div>
       </div>

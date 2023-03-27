@@ -2,7 +2,7 @@
    /* height:100vh;
     padding-top: 7rem;
     overflow:visible;*/
-     padding-top: 5rem;
+     padding-top: 0rem !important;
     
 }
 
@@ -39,6 +39,7 @@
 .personal__headerratesdetail li{
     list-style: circle;
     padding:1rem;
+    margin-left: 0.5rem;
 }
 
 .headerCTA{

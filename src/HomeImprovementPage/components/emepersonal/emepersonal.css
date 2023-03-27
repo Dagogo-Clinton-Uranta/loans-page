@@ -59,6 +59,10 @@
     color:var(--color-primary);
 
 }
+.emepersonal__frontend li {
+    list-style: circle;
+    margin-left: 0.5rem;
+}
 
 
 .btn-pos {

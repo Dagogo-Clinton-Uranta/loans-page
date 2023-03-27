@@ -24,10 +24,14 @@ const EmePersonal = () => {
           They are also a good option for financing smaller, 
           less expensive home projects. Some of the benefits
            of a personal loan for home improvement are listed below.
-         You will have the same payment every month, making it easier to budget for.
-         You can get approved more quickly than with a HELOC.
-        You don’t have to have collateral or a lot of equity in your home.
-        They have shorter terms for repayment.
+        
+         <ul>
+         <li>You will have the same payment every month, making it easier to budget for.</li>
+         <li> You can get approved more quickly than with a HELOC.</li>
+         <li> You don’t have to have collateral or a lot of equity in your home.</li>
+         <li> They have shorter terms for repayment.</li>
+        </ul>
+
        </p>
   
        

@@ -105,11 +105,11 @@ TIP: Lenders and lending partners are more likely to fund to a checking account 
       
        <fieldset id="groupBankAccount">
         <div className='radioCover'>
-       <input type="radio" className='radio' name="groupBankAccount" value={bankAccount} onChange={()=>{setBankAccount("checking");console.log(bankAccount)}}></input>Checking
+       <input type="radio" className='radio' name="groupBankAccount" value={bankAccount} onChange={()=>{setBankAccount("checking")}}></input>Checking
        </div>
 
      <div className='radioCover'>
-     <input type="radio" className='radio' name="groupBankAccount" value={bankAccount} onChange={()=>{setBankAccount("savings");console.log(bankAccount)}}></input> Savings
+     <input type="radio" className='radio' name="groupBankAccount" value={bankAccount} onChange={()=>{setBankAccount("saving")}}></input> Savings
      </div>
 
     </fieldset>

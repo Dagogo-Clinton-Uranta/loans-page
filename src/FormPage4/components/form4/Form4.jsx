@@ -109,7 +109,7 @@ const Form4 = () => {
        
        
         <div>
-      <label for="phone_number2">Phone Number  (optional)</label>
+      <label for="phone_number2">Phone Number</label>
       <input type="text" id="phone-number" name="phone_number" value={phoneNumber} onChange={(e)=>{setPhoneNumber(e.target.value)}}/>
       </div>
 

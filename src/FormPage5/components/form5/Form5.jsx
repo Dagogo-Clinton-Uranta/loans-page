@@ -90,8 +90,24 @@ const Form5 = () => {
       
         <div>
        <label for="living_length">Length at address</label>
-       <input type="text" id="lengthAtAddress" name="length_at_address" value={lengthAtHome} onChange={(e)=>{setLengthAtHome(e.target.value)}}/> 
-        {/*<BasicSelect/>*/}
+       <input type="text" id="lengthAtAddress" name="length_at_address" value={lengthAtHome} onChange={(e)=>{setLengthAtHome(e.target.value)}} style={{height:"0%", opacity:"0%"}}/> 
+       
+       <select value={lengthAtHome}  onChange={(event) => setLengthAtHome(event.target.value)}>
+                  <option value={''}>select</option>
+                <option value={1}>1 Year</option>
+                <option value={2}>2 Years</option>
+                <option value={3}>3 Years</option>
+                <option value={4}>4 Years</option>
+                <option value={5}>5 Years</option>
+                <option value={6}>6 Years</option>
+                <option value={7}>7 Years</option>
+                <option value={8}>8 Years</option>
+                <option value={9}>9 Years</option>
+                <option value={10}>10 Years</option>
+               
+                <option value={11}>11+ Years</option>
+              
+            </select>
       </div>
        
       
@@ -115,11 +131,11 @@ const Form5 = () => {
      
       <fieldset id="groupOwnhome">
         <div className='radioCover'>
-       <input type="radio" className='radio' name="groupOwnhome" onChange={()=>{setOwnsHome(true)}}></input>YES
+       <input type="radio" className='radio' name="groupOwnhome" onChange={()=>{setOwnsHome("own")}}></input>YES
        </div>
 
      <div className='radioCover'>
-     <input type="radio" className='radio' name="groupOwnhome" onChange={()=>{setOwnsHome(false)}}></input>NO
+     <input type="radio" className='radio' name="groupOwnhome" onChange={()=>{setOwnsHome("rent")}}></input>NO
      </div>
 
     </fieldset>
