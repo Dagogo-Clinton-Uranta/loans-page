@@ -34,7 +34,7 @@ var config = {
 
 //const url = "https://api.itmedia.xyz/post/testxml/api/v2"
 //const url = "http://localhost:5000/api/orders/"
-const url = "/api/orders/"
+const url = "https://poorcred-helper-api.herokuapp.com/api/orders/"
 
 
  useEffect(()=>{
