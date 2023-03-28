@@ -168,15 +168,15 @@ const Form9 = () => {
         
        <fieldset id="groupCarPaidOff">
         <div className='radioCover9'>
-       <input type="radio" className='radio' name="groupCarPaidOff" onChange={()=>{setCarPaidOff("Yes and title loans")}}></input>Yes, and I want to see title loan options
+       <input type="radio" className='radio' name="groupCarPaidOff" onChange={()=>{setCarPaidOff("yes")}}></input>Yes, and I want to see title loan options
        </div>
 
      <div className='radioCover9'>
-     <input type="radio" className='radio' name="groupCarPaidOff" onChange={()=>{setCarPaidOff("Yes,but no title loans")}}></input>Yes, but don't show title loan options
+     <input type="radio" className='radio' name="groupCarPaidOff" onChange={()=>{setCarPaidOff("yes")}}></input>Yes, but don't show title loan options
      </div>
 
      <div className='radioCover9'>
-     <input type="radio" className='radio' name="groupCarPaidOff" onChange={()=>{setCarPaidOff("No")}}></input>No, I don't own a car that is paid off
+     <input type="radio" className='radio' name="groupCarPaidOff" onChange={()=>{setCarPaidOff("no")}}></input>No, I don't own a car that is paid off
      </div>
 
     </fieldset>

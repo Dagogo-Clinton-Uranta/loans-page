@@ -88,7 +88,7 @@ const Experience = () => {
      
       <center>
         <Link to="/page2">
-       <button className='btn btn-primary btn-pos'>Get Started</button>
+       <button className='btn btn-primary btn-pos' >Get Started</button>
        </Link>
       </center>
 

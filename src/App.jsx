@@ -23,6 +23,8 @@ import FormPage3 from './FormPage3/FormPage3';
 import FormPage4 from './FormPage4/FormPage4';
 import FormPage5 from './FormPage5/FormPage5';
 import FormPage6 from './FormPage6/FormPage6';
+import FormPage6a from './FormPage6a/FormPage6a';
+import FormPage6b from './FormPage6b/FormPage6b';
 import FormPage7 from './FormPage7/FormPage7';
 import FormPage8 from './FormPage8/FormPage8';
 import FormPage9 from './FormPage9/FormPage9';
@@ -64,6 +66,8 @@ const App = () => {
      < Route path="/page4"  element={<FormPage4/>}/>
      < Route path="/page5"  element={<FormPage5/>}/>
      < Route path="/page6"  element={<FormPage6/>}/>
+     < Route path="/page6a"  element={<FormPage6a/>}/>
+     < Route path="/page6b"  element={<FormPage6b/>}/>
      < Route path="/page7"  element={<FormPage7/>}/>
      < Route path="/page8"  element={<FormPage8/>}/>
      < Route path="/page9"  element={<FormPage9/>}/>

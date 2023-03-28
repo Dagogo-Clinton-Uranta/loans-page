@@ -97,7 +97,7 @@ const Form10 = () => {
        <div className="formAnswerSingle">
       
        <div className='radioCover9'>
-     <input type="checkbox" className='radio' name="additionalLenders" onChange={()=>{setAdditionalLenders(!additionalLenders)}}></input>Yes, accept additional lenders
+     <input type="checkbox" className='radio' name="additionalLenders"  checked={additionalLenders}  onChange={()=>{setAdditionalLenders(!additionalLenders)}}></input>Yes, accept additional lenders
      </div>
          <p>Accessing our extended network of additional lenders may increase 
           your chances of receiving a loan offer because more lenders will 
@@ -124,7 +124,7 @@ const Form10 = () => {
        <div className="formAnswerSingle">
       
        <div className='radioCover9'>
-     <input type="checkbox" className='radio' name="otherOffers" onChange={()=>{setCreditOffers(!creditOffers)}}></input>Yes, other credit-related offers
+     <input type="checkbox" className='radio' name="otherOffers"  checked={creditOffers}  onChange={()=>{setCreditOffers(!creditOffers)}}></input>Yes, other credit-related offers
      </div>
        
        <p>
@@ -157,7 +157,7 @@ const Form10 = () => {
        <div className="formAnswerSingle">
       
        <div className='radioCover9'>
-     <input type="checkbox" className='radio' name="iAgree" onChange={()=>{setAgreeConsent(!agreeConsent)}}></input>I agree
+     <input type="checkbox" className='radio' name="iAgree" checked={agreeConsent} onChange={()=>{setAgreeConsent(!agreeConsent)}}></input>I agree
      </div>
        
        <p>

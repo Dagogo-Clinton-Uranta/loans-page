@@ -19,6 +19,7 @@ const Form11 = () => {
  const [accountNumber,setAccountNumber] = useState('')
  const [routingNumber,setRoutingNumber] = useState('')
  const [ipAddress,setIpAddress] = useState('')
+ const [formFilled,setFormFilled] = useState(true)
 const navigate = useNavigate()
 
 const back = ()=>{
@@ -32,16 +33,124 @@ var config = {
     withCredentials: false,
 };
 
-//const url = "https://api.itmedia.xyz/post/testxml/api/v2"
-//const url = "http://localhost:5000/api/orders/"
+
+const payloadPre11 = {
+
+  username:"ImmenseHub"     ,   
+  apikey:"7cd0a2eb6ef5a68811d45e7ff76cedf1e0d4eafe"       ,
+  campaignId:"1234"   ,
+  ip_address: ipAddress  ,
+  agent:`${navigator.userAgent}` ,
+  min_price: '20'    ,
+  amount:  sessionStorage.getItem("loanAmount")      ,
+  fName:  sessionStorage.getItem("firstName")         ,
+  lName:  sessionStorage.getItem("lastName")        ,
+  zip:  sessionStorage.getItem("zip")          ,
+  city:  sessionStorage.getItem("city")         ,
+  state:  sessionStorage.getItem("stateOf")        ,
+  address:  sessionStorage.getItem("address")      ,
+  lengthAtAddress: sessionStorage.getItem("lengthAtHome"),
+  licenseState:  sessionStorage.getItem("licenseIssuer") ,
+  email:  sessionStorage.getItem("email")        ,
+  license:  sessionStorage.getItem("licenseId")      ,
+  rentOwn:  sessionStorage.getItem("ownsHome")    ,
+  phone:  sessionStorage.getItem("phoneNumber")       ,
+  workPhone:  sessionStorage.getItem("employerPhone")    ,
+  callTime: "anytime"      ,
+  bMonth:  new Date(sessionStorage.getItem("dob")).getMonth()+1     ,           
+  bDay:  new Date(sessionStorage.getItem("dob")).getDate()       ,           
+  bYear: new Date(sessionStorage.getItem("dob")).getFullYear()      ,           
+  ssn:  sessionStorage.getItem("ssn")          ,      
+  armedForces:  sessionStorage.getItem("inMilitary")  ,
+  incomeSource:  sessionStorage.getItem("incomeSource") ,
+  employerName: sessionStorage.getItem("employerName"),   
+  timeEmployed:  sessionStorage.getItem("timeEmployed") ,
+  employerPhone:  sessionStorage.getItem("phoneNumber"),   
+  jobTitle: sessionStorage.getItem("jobTitle")    ,  
+  paidEvery:  sessionStorage.getItem("paymentFreq")    ,
+  nextPayday: sessionStorage.getItem("nextPayday")   ,  
+  secondPayday:  sessionStorage.getItem("nextPayday"), 
+  accountType:  sessionStorage.getItem("bankAccount")   ,
+  //bankName: "JP Morgan"     ,   //dont have
+  //bankPhone:  "(605) 964-2306"     ,  //dont have
+  monthsBank:  sessionStorage.getItem("timeAtBank")    ,
+  directDeposit:  "yes",  //dont have
+  monthlyNetIncome:  sessionStorage.getItem("monthlyIncome"), 
+  ownCar:  sessionStorage.getItem("carPaidOff")       ,
+  note:  sessionStorage.getItem("firstName")         ,
+  websiteName:  "https://www.poorcreditquickloans.com"  ,
+  timeout: 600     ,
+  lead_type:  "personalloan"    ,
+  loan_reason:  sessionStorage.getItem("loanReason")  , 
+  credit_type:  sessionStorage.getItem("creditScore")  ,
+  /*atrk:  sessionStorage.getItem("firstName")        ,*/ 
+  unsecuredDebt:  sessionStorage.getItem("unsecuredLoans")
+      }
+
+
+   
+const payload = {
+
+  username:"ImmenseHub"     ,   
+  apikey:"7cd0a2eb6ef5a68811d45e7ff76cedf1e0d4eafe"       ,
+  campaignId:"1234"   ,
+  ip_address: ipAddress  ,
+  agent:`${navigator.userAgent}` ,
+  min_price: '20'    ,
+  amount:  sessionStorage.getItem("loanAmount")      ,
+  fName:  sessionStorage.getItem("firstName")         ,
+  lName:  sessionStorage.getItem("lastName")        ,
+  zip:  sessionStorage.getItem("zip")          ,
+  city:  sessionStorage.getItem("city")         ,
+  state:  sessionStorage.getItem("stateOf")        ,
+  address:  sessionStorage.getItem("address")      ,
+  lengthAtAddress: sessionStorage.getItem("lengthAtHome"),
+  licenseState:  sessionStorage.getItem("licenseIssuer") ,
+  email:  sessionStorage.getItem("email")        ,
+  license:  sessionStorage.getItem("licenseId")      ,
+  rentOwn:  sessionStorage.getItem("ownsHome")    ,
+  phone:  sessionStorage.getItem("phoneNumber")       ,
+  workPhone:  sessionStorage.getItem("employerPhone")    ,
+  callTime: "anytime"      ,
+  bMonth:  new Date(sessionStorage.getItem("dob")).getMonth()+1     ,           
+  bDay:  new Date(sessionStorage.getItem("dob")).getDate()       ,           
+  bYear: new Date(sessionStorage.getItem("dob")).getFullYear()      ,           
+  ssn:  sessionStorage.getItem("ssn")          ,      
+  armedForces:  sessionStorage.getItem("inMilitary")  ,
+  incomeSource:  sessionStorage.getItem("incomeSource") ,
+  employerName: sessionStorage.getItem("employerName"),   
+  timeEmployed:  sessionStorage.getItem("timeEmployed") ,
+  employerPhone:  sessionStorage.getItem("phoneNumber"),   
+  jobTitle: sessionStorage.getItem("jobTitle")    ,  
+  paidEvery:  sessionStorage.getItem("paymentFreq")    ,
+  nextPayday: sessionStorage.getItem("nextPayday")   ,  
+  secondPayday:  sessionStorage.getItem("nextPayday"), 
+  abaNumber: /*"021000021"*/sessionStorage.getItem("routingNumber")  ,
+  accountNumber:  sessionStorage.getItem("accountNumber"),
+  accountType:  sessionStorage.getItem("bankAccount")   ,
+  //bankName: "JP Morgan"     ,   //dont have
+  //bankPhone:  "(605) 964-2306"     ,  //dont have
+  monthsBank:  sessionStorage.getItem("timeAtBank")    ,
+  directDeposit:  "yes",  //dont have
+  monthlyNetIncome:  sessionStorage.getItem("monthlyIncome"), 
+  ownCar:  sessionStorage.getItem("carPaidOff")       ,
+  note:  sessionStorage.getItem("firstName")         ,
+  websiteName:  "https://www.poorcreditquickloans.com"  ,
+  timeout: 600     ,
+  lead_type:  "personalloan"    ,
+  loan_reason:  sessionStorage.getItem("loanReason")  , 
+  credit_type:  sessionStorage.getItem("creditScore")  ,
+  /*atrk:  sessionStorage.getItem("firstName")        ,*/ 
+  unsecuredDebt:  sessionStorage.getItem("unsecuredLoans")
+      }
+
+
 const url = "https://poorcred-helper-api.herokuapp.com/api/orders/"
 
 
  useEffect(()=>{
    
  sessionStorage.getItem("firstName") !="null" && setFormName(sessionStorage.getItem("firstName"))
-  /*sessionStorage.getItem("address") !="null" && setRecordedAddress(sessionStorage.getItem("address"))
-  sessionStorage.getItem("licenseIssuer") !="null" && setLicenseIssuer(sessionStorage.getItem("licenseIssuer"))*/
 
   sessionStorage.getItem("accountNumber") !="null" && setAccountNumber(sessionStorage.getItem("accountNumber"))
   sessionStorage.getItem("routingNumber") !="null" && setRoutingNumber(sessionStorage.getItem("routingNumber"))
@@ -51,6 +160,17 @@ const url = "https://poorcred-helper-api.herokuapp.com/api/orders/"
 
 
 useEffect(()=>{
+
+
+ /* Object.values(payloadPre11).forEach(
+    (val) => {
+      if (val === null || val === ''){
+        setFormFilled(false)
+      }
+    }
+    );*/
+
+
   if((accountNumber !==null|| "")   &&  (routingNumber !==null|| "")){
    setContinueCondition(true)
   }
@@ -71,63 +191,11 @@ useEffect(()=>{
  
   
    
-   
-    const payload = {
 
-username:"ImmenseHub"     ,   
-apikey:"7cd0a2eb6ef5a68811d45e7ff76cedf1e0d4eafe"       ,
-campaignId:""   ,
-ip_address: ipAddress  ,
-agent:`${navigator.userAgent}` ,
-min_price: '20'    ,
-amount:  '5000'       ,
-fName:  sessionStorage.getItem("firstName")         ,
-lName:  sessionStorage.getItem("lastName")        ,
-zip:  sessionStorage.getItem("zip")          ,
-city:  sessionStorage.getItem("city")         ,
-state:  sessionStorage.getItem("stateOf")        ,
-address:  sessionStorage.getItem("address")      ,
-lengthAtAddress: sessionStorage.getItem("lengthAtHome"),
-licenseState:  sessionStorage.getItem("licenseIssuer") ,
-email:  sessionStorage.getItem("email")        ,
-license:  sessionStorage.getItem("licenseId")      ,
-rentOwn:  'rent'/*sessionStorage.getItem("ownsHome") */    ,
-phone:  sessionStorage.getItem("phoneNumber")       ,
-workPhone:  sessionStorage.getItem("phoneNumber")    ,
-callTime: "anytime"      ,
-bMonth:  new Date(sessionStorage.getItem("dob")).getMonth()+1     ,           
-bDay:  new Date(sessionStorage.getItem("dob")).getDate()       ,           
-bYear: 1995 /*new Date(sessionStorage.getItem("dob")).getFullYear() */      ,           
-ssn:  sessionStorage.getItem("ssn")          ,      
-armedForces:  sessionStorage.getItem("inMilitary")  ,
-incomeSource:  sessionStorage.getItem("incomeSource") ,
-employerName:  "Meta",    // DONT HAVE
-timeEmployed:  sessionStorage.getItem("timeEmployed") ,
-employerPhone:  sessionStorage.getItem("phoneNumber"),    //DONT HAVE
-jobTitle:  "software developer"    ,   //dont have
-paidEvery:  sessionStorage.getItem("paymentFreq")    ,
-nextPayday:  "28-03-2023"   ,  //dont have
-secondPayday:  "14-04-2023" ,   //dont have
-abaNumber: "021000021" /*sessionStorage.getItem("routingNumber")  */  ,
-accountNumber:  sessionStorage.getItem("accountNumber"),
-accountType:  sessionStorage.getItem("bankAccount")   ,
-bankName: "JP Morgan"     ,   //dont have
-bankPhone:  "(605) 964-2306"     ,  //dont have
-monthsBank:  sessionStorage.getItem("timeAtBank")    ,
-directDeposit:  "yes",  //dont have
-monthlyNetIncome:  "2750", //dont have
-ownCar: "yes" /*sessionStorage.getItem("carPaidOff")*/        ,
-note:  sessionStorage.getItem("firstName")         ,
-websiteName:  "https://www.poorcreditquickoans.com"  ,
-timeout: 600     ,
-lead_type:  "personalloan"    ,
-loan_reason:  "debtConsolidation"/*sessionStorage.getItem("loanReason")*/   , 
-credit_type:  sessionStorage.getItem("creditScore")  ,
-/*atrk:  sessionStorage.getItem("firstName")        ,*/ 
-unsecuredDebt:  sessionStorage.getItem("unsecuredLoans")
-    }
-  
-    
+/*if(!formFilled){
+  window.alert("You still have missing fields! please fill any space left in this form and try again")
+}*/
+   /*else{*/
     try{
       setLoading(true);
 
@@ -137,7 +205,7 @@ unsecuredDebt:  sessionStorage.getItem("unsecuredLoans")
           
           setLoading(false);
             console.log("THE LOANS LEAD HAS COME BACK FROM THE DATABASE !...",result.data)
-           if( result.data.Messages){ setResponseMessage(result.data.messages)}
+           if( result.data.Messages){ setResponseMessage(result.data.Messages)}
 
            if( result.data.Status == "Rejected"){ setResponseNoLead(true)}
           
@@ -148,8 +216,7 @@ unsecuredDebt:  sessionStorage.getItem("unsecuredLoans")
          
         
         })
-      
-
+    
    }
     catch(error){
       setLoading(false)
@@ -159,7 +226,7 @@ unsecuredDebt:  sessionStorage.getItem("unsecuredLoans")
      /* res.status(404)*/
       throw new Error('Something went wrong when fetching from test API')
   };
- 
+/*}*/
  
 
  }
@@ -244,13 +311,13 @@ unsecuredDebt:  sessionStorage.getItem("unsecuredLoans")
       
         <div>
        <label for="routing_number">ABA/Routing Number</label>
-      <input type="text" id="routing_number" name="routing_number" value={routingNumber} onChange={(e)=>{setRoutingNumber(e.target.value);sessionStorage.setItem("routingNumber",e.target.value)}}/> 
+      <input type="number" placeholder="e.g 020010394" id="routing_number" name="routing_number"  pattern="[0-9]{1}[0-9]{8}" value={routingNumber} onChange={(e)=>{setRoutingNumber(e.target.value);sessionStorage.setItem("routingNumber",e.target.value)}}/> 
       </div>
        
        
         <div>
       <label for="account_number">Account Number</label>
-      <input type="text" id="account_number" name="account_number" value={accountNumber} onChange={(e)=>{setAccountNumber(e.target.value);sessionStorage.setItem("accountNumber",e.target.value)}}/>
+      <input type="text" placeholder="e.g 020010394" id="account_number" name="account_number" minlength="6"  value={accountNumber} onChange={(e)=>{setAccountNumber(e.target.value);sessionStorage.setItem("accountNumber",e.target.value)}}/>
       </div>
       </div>
 
@@ -275,12 +342,12 @@ unsecuredDebt:  sessionStorage.getItem("unsecuredLoans")
        </div>
 
    </div>
-   {responseMessage.length > 0 && 
+   {responseMessage && responseMessage.length && responseMessage.length > 0 && 
      
      <center style={{marginTop:"2rem"}}>
         <h4 style={{color:"red",marginBottom:"2rem"}}>Please Attend to the following fields and re-submit:</h4>
     
-       { responseMessage.length >0 &&
+       {responseMessage && responseMessage.length && responseMessage.length >0 &&
         responseMessage.map((item)=>(
         
         <p>{item}</p>

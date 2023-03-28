@@ -98,7 +98,7 @@ const Form4 = () => {
       
         <div>
        <label for="email">Email</label>
-      <input type="text" id="email" name="email" value={email} onChange={(e)=>{setEmail(e.target.value)}}/> 
+      <input type="email" id="email" name="email" value={email} onChange={(e)=>{setEmail(e.target.value)}}/> 
       </div>
 
        <p>
@@ -110,7 +110,7 @@ const Form4 = () => {
        
         <div>
       <label for="phone_number2">Phone Number</label>
-      <input type="text" id="phone-number" name="phone_number" value={phoneNumber} onChange={(e)=>{setPhoneNumber(e.target.value)}}/>
+      <input type="tel" id="phone-number" name="phone_number" value={phoneNumber} onChange={(e)=>{setPhoneNumber(e.target.value)}}/>
       </div>
 
       Entering your phone number and clicking "Continue" is your e-signature instructing us and up to

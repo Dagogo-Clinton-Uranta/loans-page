@@ -29,7 +29,7 @@ const Form6 = () => {
    sessionStorage.setItem("inMilitary",inMilitary)
    
    setLoading(false)
-   setTimeout(navigate('/page7'),1500)
+   setTimeout(navigate('/page6a'),1500)
    }
    
    
@@ -105,7 +105,7 @@ const Form6 = () => {
        <label for="incomeSource">Income Source</label>
       <input type="text" id="incomeSource" name="incomeSource"  value={incomeSource} style={{height:"0%",opacity:"0"}} /> 
 
-      <select value={setIncomeSource}  onChange={(event) => setIncomeSource(event.target.value)}>
+      <select value={incomeSource}  onChange={(event) => setIncomeSource(event.target.value)}>
                   <option value={''}>select</option>
                 <option value={'employment'}>Job employment</option>
                 <option value={'selfemployment'}>Self Employed</option>

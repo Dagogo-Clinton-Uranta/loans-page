@@ -13,6 +13,7 @@ const [firstName,setFirstName] = useState('')
 const [lastName,setLastName] = useState('')
 const [dob,setDob] = useState('')
 const [loanReason,setLoanReason] = useState('')
+const [loanAmount,setLoanAmount] = useState(0)
 const navigate = useNavigate()
 
 function callbackFunction(data) {
@@ -25,6 +26,7 @@ sessionStorage.setItem("firstName",firstName)
 sessionStorage.setItem("lastName",lastName)
 sessionStorage.setItem("dob",dob)
 sessionStorage.setItem("loanReason",loanReason)
+sessionStorage.setItem("loanAmount",loanAmount)
 setLoading(false)
 
 setTimeout(navigate('/page3'),1500)
@@ -32,21 +34,23 @@ setTimeout(navigate('/page3'),1500)
 
 const [continueCondition,setContinueCondition] = useState(false)
 
+const adultMin = (new Date(new Date().setFullYear(new Date().getFullYear()-18))).toISOString().slice(0, 10)
+
 
 useEffect(()=>{
-  if(firstName !== null||'' && lastName !==null||'' && dob !==null||'' && loanReason !==null||''){
+  if(firstName !== null||'' && lastName !==null||'' && dob !==null||'' && loanReason !==null||''&& loanAmount !==null||''){
     
     setContinueCondition(true)
   }
 
-  if(firstName === '' || lastName ==='' || dob ==='' ||loanReason ===''){
+  if(firstName === '' || lastName ==='' || dob ==='' ||loanReason ===''&& loanAmount !==null||''){
     
     setContinueCondition(false)
   }
 
 
 },
-[firstName,lastName,dob,loanReason])
+[firstName,lastName,dob,loanReason,loanAmount])
 
 useEffect(()=>{
 
@@ -54,8 +58,9 @@ useEffect(()=>{
   sessionStorage.getItem("lastName")!="null" &&  setLastName(sessionStorage.getItem("lastName"))
   sessionStorage.getItem("dob")!="null" &&  setDob(sessionStorage.getItem("dob"))
   sessionStorage.getItem("loanReason")!="null" && setLoanReason(sessionStorage.getItem("loanReason"))
+  sessionStorage.getItem("loanAmount")!="null" && setLoanAmount(sessionStorage.getItem("loanAmount"))
 
-console.log("STORED VALUES ARE ", firstName,lastName,dob,loanReason)
+console.log("STORED VALUES ARE ", firstName,lastName,dob,loanReason,loanAmount)
 
 },[])
 
@@ -112,7 +117,7 @@ const back = ()=>{
 
     </div>
 
-      <hr />
+      
 
       <div className="Form2__frontend">
        
@@ -127,8 +132,30 @@ const back = ()=>{
        <div className="formAnswerSingle">
       
         <div>
-       <label for="first name">Date of Birth</label>
-       <input type="date" id="javascript" name="fav_language" value={dob} onChange={(e)=>setDob(e.target.value)}/>  
+       <label for="dob">Date of Birth (18 and above)</label>
+       <input type="date" id="dob" name="dob" max={adultMin} value={dob} onChange={(e)=>setDob(e.target.value)}/>  
+      </div>
+       
+       
+       
+      </div>
+
+
+    </div>
+
+    <div className="Form2__frontend">
+       
+       <div className="formQuestion"> 
+       <h4>How much do you want to borrow ? </h4>
+       
+
+       </div>
+
+       <div className="formAnswerSingle">
+      
+        <div>
+       <label for="loanAmount">Loan Amount ($)</label>
+       <input type="number" id="loanAmount" name="loanAmount" max={adultMin} value={loanAmount} onChange={(e)=>setLoanAmount(e.target.value)}/>  
       </div>
        
        

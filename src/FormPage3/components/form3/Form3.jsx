@@ -119,7 +119,7 @@ const back = ()=>{
 
       <div>
       <label for="zip_code">Zip Code</label>
-      <input type="text" id="javascript" name="zip code" value={zip} onChange={(e)=>{setZip(e.target.value)}}/>
+      <input type="number" id="javascript" name="zip code" value={zip} onChange={(e)=>{setZip(e.target.value)}}/>
       </div>
 
       <div>
