@@ -14,6 +14,7 @@ const Form6a = () => {
   const [formName,setFormName] = useState('')
   const [monthlyIncome,setMonthlyIncome] = useState('')
   const [nextPayday,setNextPayday] = useState('')
+  const[payDate,setPayDate] = useState(new Date())
   const [recordedAddress,setRecordedAddress] = useState('')
   
 
@@ -24,6 +25,7 @@ const Form6a = () => {
     setLoading(true)
    sessionStorage.setItem("monthlyIncome",monthlyIncome)
    sessionStorage.setItem("nextPayday",nextPayday)
+   sessionStorage.setItem("payDate",payDate)
    
    
    setLoading(false)
@@ -38,8 +40,9 @@ const Form6a = () => {
 
      sessionStorage.getItem("monthlyIncome") !="null" && setMonthlyIncome(sessionStorage.getItem("monthlyIncome"))
      sessionStorage.getItem("nextPayday") !="null" && setNextPayday(sessionStorage.getItem("nextPayday"))
+     sessionStorage.getItem("payDate") !="null" && setNextPayday(sessionStorage.getItem("payDate"))
 
-     console.log("the payday format is NO:",nextPayday)
+     console.log("the payday format is NOWF:",nextPayday)
    },[])
  
  
@@ -102,7 +105,7 @@ const Form6a = () => {
       
         <div>
        <label for="monthlyIncome">Monthly Income($)</label>
-      <input type="number" id="monthlyIncome" name="monthlyIncome"  value={monthlyIncome} onChange={(event) => setMonthlyIncome(event.target.value)} /> 
+      <input type="number" min="200" id="monthlyIncome" name="monthlyIncome"  value={monthlyIncome} onChange={(event) => setMonthlyIncome(event.target.value)} /> 
 
     
       </div>
@@ -130,7 +133,7 @@ const Form6a = () => {
       
         <div>
        <label for="next_payday">Next Payday</label>
-       <input type="date" id="next_payday" name="next_payday"  value={new Date(nextPayday.replaceAll('-','/'))} min={new Date().toISOString().slice(0, 10)} onChange={(event) => setNextPayday(new Date(event.target.value).toLocaleDateString().replaceAll('/','-'))}/>  
+       <input type="date" id="next_payday" name="next_payday"  value={payDate} min={new Date().toISOString().slice(0, 10)} onChange={(event) => {setNextPayday(new Date(event.target.value).toLocaleDateString().replaceAll('/','-'));setPayDate(event.target.value)}}/>  
       
       </div>
        
