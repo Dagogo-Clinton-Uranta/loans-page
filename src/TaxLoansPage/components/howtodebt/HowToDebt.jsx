@@ -22,7 +22,7 @@ const HowToDebt = () => {
         Personal loans are the most popular form of consolidation and can
          be obtained through your credit union or lender of choice. 
          It is a good idea to compare rates and terms before committing to one lender.
-          Using a trusted company like PersonalLoans.com is a great strategy because
+          Using a trusted company like poorcreditquickloans.com is a great strategy because
            they do the legwork of connecting you with a lender and loan type that can 
            work for you.
        You may also choose to consolidate debt with a Home Equity Line of Credit or Second Mortgage.

@@ -101,7 +101,7 @@ const Form10 = () => {
      </div>
          <p>Accessing our extended network of additional lenders may increase 
           your chances of receiving a loan offer because more lenders will 
-          see your request. The extended network includes the PersonalLoans.com 
+          see your request. The extended network includes the poorcreditquickloans.com 
           network of lenders and also third party lender networks that have access 
           to additional lenders. The other lender networks and additional lenders
            will see your information. Learn more here.
@@ -165,7 +165,7 @@ const Form10 = () => {
 This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.
 By clicking "Submit", you agree as follows:
 I confirm that I have read, understood, and agree to the Ad Disclosure, Privacy Policy, Terms of Use, E-Consent, and Credit Authorization.
-I authorize PersonalLoans.com to use my information to create an account that will allow me to more easily submit future loan inquiries on this site and its affiliated sites.
+I authorize poorcreditquickloans.com to use my information to create an account that will allow me to more easily submit future loan inquiries on this site and its affiliated sites.
        </p>
        
        

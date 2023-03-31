@@ -35,7 +35,7 @@ Income - In order to ensure that you will be able to repay a loan,
   
   <li>
 Bank Account - Most loans require a valid checking account, as 
-once a loan is approved for you through PersonalLoans.com, your lender
+once a loan is approved for you through poorcreditquickloans.com, your lender
  or lending partner will deposit your funds directly into said account.
 
  </li>

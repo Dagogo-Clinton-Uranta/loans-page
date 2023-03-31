@@ -52,7 +52,7 @@ const EmergencyLoans = () => {
         and compare rates before choosing the lender
          you want to stick with. You can save time 
          doing research by going with a company like 
-         PersonalLoans.com. We use your information
+         poorcreditquickloans.com. We use your information
           to connect you with one of our lending 
           partners who has an offer that can work for 
           you. Once you have been connected and approved, 

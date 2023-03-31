@@ -13,10 +13,10 @@ const SubmitLoan = () => {
       <h2>Emergency Loan Help</h2>
 
          <p>
-         PersonalLoans.com is happy to provide help and support throughout your financial journey.
+         poorcreditquickloans.com is happy to provide help and support throughout your financial journey.
           You are welcome to <a href="/#">contact us with any questions</a> you may have about our process.
            Questions about a specific loan you have already agreed to should be taken directly
-            to the lender. <Link to="/page2">Get started</Link> with PersonalLoans.com today!
+            to the lender. <Link to="/page2">Get started</Link> with poorcreditquickloans.com today!
         </p>
 
         <button className="btn btn-primary">Get Started</button>

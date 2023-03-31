@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <div id="consentTitle">
           <center className='consentTitleHeader'>
-         <h1>PersonalLoans.com consent for electronic signatures, records, and disclosures ("E-Consent")</h1>
+         <h1>poorcreditquickloans.com consent for electronic signatures, records, and disclosures ("E-Consent")</h1>
          </center>
     
     </div>

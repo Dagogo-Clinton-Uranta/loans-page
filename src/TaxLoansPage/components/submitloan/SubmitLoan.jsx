@@ -13,7 +13,7 @@ const SubmitLoan = () => {
       <h2>Learn More Today</h2>
 
          <p>
-         Although PersonalLoans.com’s lender network does
+         Although poorcreditquickloans.com’s lender network does
           not offer Tax Refund Advance Loans, you can still
           <a>Submit a personal loan request</a> today for any other
             reason. If you have any questions, contact us via 

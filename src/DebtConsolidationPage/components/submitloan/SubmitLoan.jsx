@@ -13,7 +13,7 @@ const SubmitLoan = () => {
 
          <p>
          Learning how to consolidate credit card debt and other payments
-          can be simple with the right assistance. <a href="/#">PersonalLoans.com</a>  can 
+          can be simple with the right assistance. <a href="/#">poorcreditquickloans.com</a>  can 
           get you on track by connecting you with a lender that can work for
            you. Simply fill out an online request form and we’ll let you know 
            if one of our lending partners has an offer for you! Learn more about

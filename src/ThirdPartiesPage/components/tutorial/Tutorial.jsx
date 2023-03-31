@@ -651,7 +651,7 @@ const Tutorial = () => {
 <li>PERL Mortgage</li>
 <li>Personal Money Store</li>
 <li>PersonalLoanPro</li>
-<li>PersonalLoans.com</li>
+<li>poorcreditquickloans.com</li>
 <li>Personify Financial</li>
 <li>PH Financial</li>
 <li>Phat Credit</li>

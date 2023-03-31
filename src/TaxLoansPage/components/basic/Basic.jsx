@@ -13,7 +13,7 @@ const Basic = () => {
 
          <p>
          If you’re ready for your next home improvement project
-          and just need the funds to get started, check out PersonalLoans.com.
+          and just need the funds to get started, check out poorcreditquickloans.com.
            Learn more about us and what we do, then let us help you find a lender
             for your home improvement loans!
 

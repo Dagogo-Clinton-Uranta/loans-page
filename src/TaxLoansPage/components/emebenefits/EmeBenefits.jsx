@@ -30,7 +30,7 @@ and many companies also charge large fees. Some disreputable companies even
  engage in predatory behavior with the hope that you will miss a payment so
   they can charge late fees and keep you indebted longer.<br/>
 The best way to avoid this is to always do business with a company
- you know you can trust. For example, PersonalLoans.com is a service
+ you know you can trust. For example, poorcreditquickloans.com is a service
   that can connect you to lenders, rather than lend you money directly.
    This means we do not benefit from missed or late payments, or collect
     fees associated with your loan. Our priority is to help you gain financial

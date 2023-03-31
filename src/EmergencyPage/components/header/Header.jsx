@@ -32,7 +32,7 @@ const Header = () => {
 
            <div className = "selectedConsent">
            <input type="radio"  checked="checked"/>
-               <p>Permit personalloans.com to use my current account details to check if I already have an account with one of its connected websites.</p>
+               <p>Permit poorcreditquickloans.com to use my current account details to check if I already have an account with one of its connected websites.</p>
            </div>
 
            <div className = "selectedConsent">

@@ -28,7 +28,7 @@ const EmergencyKnow = () => {
         Emergency loans don’t always have to be short-term or have
          high interest rates. You can take out a personal loan just 
          as quickly in many cases, and have the money deposited directly 
-         into your account. With PersonalLoans.com, you can easily submit
+         into your account. With poorcreditquickloans.com, you can easily submit
           some basic information about your request and we will attempt
            to connect you with a lender. After a successful connection 
            and approval, you can receive funds in as little as one 

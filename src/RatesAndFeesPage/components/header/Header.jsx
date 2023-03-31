@@ -14,7 +14,7 @@ const Header = () => {
          information on their rates and terms. This will typically
           happen shortly after your loan request is complete, and 
           you are connected with a lender or lending partner. 
-          PersonalLoans.com does not make credit decisions or determine
+          poorcreditquickloans.com does not make credit decisions or determine
            rates and terms. Remember, you are under no obligation to
             accept the loan offer if the terms are not satisfactory 
             for whatever reason.

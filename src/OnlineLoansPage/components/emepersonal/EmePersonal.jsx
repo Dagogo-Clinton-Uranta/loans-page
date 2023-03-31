@@ -18,11 +18,11 @@ const EmePersonal = () => {
       <h3>Why Use poorcredit.com ?</h3>
        <p>
        Submitting a request for an online loan through a trusted
-        company like PersonalLoans.com is a great way to find lenders 
+        company like poorcreditquickloans.com is a great way to find lenders 
         without all the research and guessing. We are not lenders 
         ourselves; we have our own large network of lenders and also
          work with other third-party lender networks. So, by submitting 
-         the loan request form on PersonalLoans.com, your information
+         the loan request form on poorcreditquickloans.com, your information
           is shown to this large extended network of lenders so they
            can decide whether to offer you a loan based on the information
             you provided. This can save you time because you won’t have to 

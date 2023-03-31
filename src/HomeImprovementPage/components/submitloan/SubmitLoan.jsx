@@ -14,7 +14,7 @@ const SubmitLoan = () => {
          <p>
          If you’re ready for your next home improvement project
           and just need the funds to  <a href="/#">get started</a>, check out
-           PersonalLoans.com. <a href="/#">Learn more about us</a> and what we do,
+           poorcreditquickloans.com. <a href="/#">Learn more about us</a> and what we do,
             then let us help you find a lender for your home improvement
              loans!
 

@@ -24,7 +24,7 @@ const Header = () => {
       <h1>Personal Loans Online</h1>
 
          <p>
-         Looking for personal loans online is a great way to find lenders that may be willing to extend a loan offer to you. PersonalLoans.com is a great resource to connect you with lenders who may be able to find an offer that can work for you. We’ll assist you in getting the funds for a variety of projects and personal reasons, and we allow submissions for all credit types. Learn more below about online loans, how they work, and how to go through the online loan process.
+         Looking for personal loans online is a great way to find lenders that may be willing to extend a loan offer to you. poorcreditquickloans.com is a great resource to connect you with lenders who may be able to find an offer that can work for you. We’ll assist you in getting the funds for a variety of projects and personal reasons, and we allow submissions for all credit types. Learn more below about online loans, how they work, and how to go through the online loan process.
 
         </p>
 
@@ -33,7 +33,7 @@ const Header = () => {
 
            <div className = "selectedConsent">
            <input type="radio"  checked="checked"/>
-               <p>Permit personalloans.com to use my current account details to check if I already have an account with one of its connected websites.</p>
+               <p>Permit poorcreditquickloans.com to use my current account details to check if I already have an account with one of its connected websites.</p>
            </div>
 
            <div className = "selectedConsent">
