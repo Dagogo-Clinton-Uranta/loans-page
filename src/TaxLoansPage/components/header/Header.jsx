@@ -8,7 +8,7 @@ import LoanSlider from './LoanSlider'
 
 const Header = () => {
 
-   const [input,setInput] = useState(5000)
+   const [input,setInput] = useState(1000)
 
    const handleChange = (e) => {
     setInput(e.target.value);
@@ -43,7 +43,7 @@ const Header = () => {
 
            <div className = "selectedConsent">
            <input type="radio"  checked="checked"/>
-             <p>To the <a href="">Privacy Policy</a>, <a href="/#">Terms of Use</a>, <a href="/#">Ad Disclosure</a>, <a href="/#">Credit Authorization</a>, <a href="/#">Rates & Fees</a>, <a href="/#">Responsible Lending</a>, and <a href="/#">E-Consent</a>.</p>
+                     <p> <a href="/privacypolicy" style={{textDecoration:"underline"}}>Privacy Policy</a>, <a href="/termsofuse" style={{textDecoration:"underline"}}>Terms of Use</a>, <a href="/addisclosure" style={{textDecoration:"underline"}}>Ad Disclosure</a>, <a href="/creditauthorization" style={{textDecoration:"underline"}}>Credit Authorization</a>, <a href="/ratesandfees" style={{textDecoration:"underline"}}>Rates & Fees</a> and <a style={{textDecoration:"underline"}} href="/econsent">E-Consent</a>.</p>
            </div>
          </div>
       </div>
@@ -59,20 +59,20 @@ const Header = () => {
        </input>
     
        
-     {  <div className='sliderLabel' style={{marginLeft:`${(input*100/35000)*16/20}%`}}>${input.toString()}</div>}
+     {  <div className='sliderLabel' style={{marginLeft:`${(input*100/3500)*16/20}%`}}>${input.toLocaleString()}</div>}
        <input
         type='range'
         onChange={(e)=>{setInput(e.target.value)}}
         min={0}
-        max={35000}
-        step={1000}
+        max={3500}
+        step={100}
         value={input}
         className='custom-slider'>
      </input>
 
        <div className='sliderEnds' style={{display:"flex", justifyContent:"space-between"}}>
         <span>$0</span>
-        <span>$35000</span>
+        <span>$3,500</span>
        </div>
       
        <LoanSlider value={input} setInput={handleChange}/>

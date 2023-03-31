@@ -23,6 +23,8 @@ header {
     align-items: center;
     gap:20rem;
     z-index: 0;
+
+    padding-top: 8rem !important; 
   
 
 }

@@ -27,7 +27,7 @@ const About = () => {
          You are not required to accept the conditions of any loan offer
           made to you by poorcreditquickloans.com, and there are no fees or costs associated 
           with submitting a loan request. There are loan amounts available ranging 
-          from $1,000 to $35,000. The APR ranges from 5.99% to 35.99%. Our network 
+          from $1,000 to $3,500. The APR ranges from 5.99% to 35.99%. Our network 
           of lenders offers loans with terms as long as 72 months, with a minimum term
            of 3 months. The exact loan rate is determined by the requested loan amount
             as well as your credit history, usage, and score. If a loan is offered to you,

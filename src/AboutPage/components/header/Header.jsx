@@ -17,7 +17,7 @@ const Header = () => {
           consumers to be connected with a personal loan through our
            network of lenders and the other third-party lender networks
             we use. Our online service can help you to get a loan of
-             between $1,000 and $35,000, right from your home or office,
+             between $1,000 and $3,500, right from your home or office,
               or even on the go through your mobile device. We help people 
               looking to borrow for any number of reasons, whether it be 
               for a home improvement project, a payday loan, debt consolidation,

@@ -57,9 +57,10 @@ const Footer = () => {
       <div>
         <h2>Contact Information</h2>
       <ul>
-        <li><a href="/#">Addess: lorem ipsum</a></li>
+        <li><a href="/#">Address: 2661 N Pearl St. #431
+Tacoma, WA 98407</a></li>
         <li><a href="/#">Telephone number: 1-800-722-2274</a></li>
-        <li><a href="/#">Email address:support@personalloans.com</a></li>
+        <li><a href="/#">Email address: support@poorcreditquickloans.com</a></li>
         
       </ul>
       </div>

@@ -48,7 +48,7 @@ const RatesDetail = () => {
         <br />
         <ul>
 
-      <li>Loan amount: $1,000 – $35,000</li>
+      <li>Loan amount: $1,000 – $3,500</li>
       <li>Lending period: 90 days - 72 months</li>
       <li>Payment frequency: Once a month or twice a month</li>
       <li>Min APR: 5.99%</li>

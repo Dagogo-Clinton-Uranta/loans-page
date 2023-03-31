@@ -13,8 +13,8 @@ const marks = [
   },*/
   
   {
-    value: 35000,
-    label: '$35,000',
+    value: 3500,
+    label: '$3,500',
   },
 ];
 
@@ -43,7 +43,7 @@ export default function DiscreteSliderLabel(input,setInput) {
         getAriaValueText={valuetext}
         step={5000}
         min={0}
-        max={35000}
+        max={3500}
         marks={marks}
         /*value={value}*/
        onChange={setInput}

@@ -16,7 +16,7 @@ const q6 = `What products or services will I receive offers for?`
 const q7 =`Why choose a Personal Loan?`*/
 
 
-const a1 = `Typical Requirements:• Credit Score: 580+• Minimum Income: $2,000 per month• Income Source: Employed, Self-Employed, or Benefits• Loan Range Given: $1,000 to $35,000
+const a1 = `Typical Requirements:• Credit Score: 580+• Minimum Income: $2,000 per month• Income Source: Employed, Self-Employed, or Benefits• Loan Range Given: $1,000 to $3,500
 The personal loan installment loan process is also quick and convenient. You can request a loan online by providing basic personal and financial information. Your lender or lending
  partner will provide you with a loan agreement individually tailored to your financial needs. Once you accept the loan agreement, your loan will be deposited directly into your bank 
  account. Again, review the terms of your agreement before you sign, as each lender or lending partner will have their own specific repayment process.
@@ -26,7 +26,7 @@ Consumers are encouraged to research applicable Federal and state laws, and to a
    on where you live. Also, your loan amount, APR and length of loan may depend on a variety of factors that lenders or lending partners use including your credit score and repayment history.`
 
 const a2 = `Typical Requirements:• Credit Score: 580+• Minimum Income: $2,000 per month• Income Source: Employed,
- Self-Employed, or Benefits• Loan Range Given: $1,000 to $35,000
+ Self-Employed, or Benefits• Loan Range Given: $1,000 to $3,500
 The personal loan installment loan process is also quick and convenient.
  You can request a loan online by providing basic personal and financial information.
   Your lender or lending partner will provide you with a loan agreement individually tailored
@@ -43,7 +43,7 @@ Consumers are encouraged to research applicable Federal and state laws, and to a
       partners use including your credit score and repayment history.`
 
 const a3 = `Typical Requirements:• Credit Score: 580+• Minimum Income: $2,000 per month• Income Source:
- Employed, Self-Employed, or Benefits• Loan Range Given: $1,000 to $35,000
+ Employed, Self-Employed, or Benefits• Loan Range Given: $1,000 to $3,500
 The personal loan installment loan process is also quick and convenient. You can request 
 a loan online by providing basic personal and financial information. Your lender or lending
  partner will provide you with a loan agreement individually tailored to your financial needs.
@@ -60,10 +60,10 @@ Consumers are encouraged to research applicable Federal and state laws,
    your credit score and repayment history.` 
 
 
-const a4 = `Personal Loans™ provides its service completely free of charge to you. However, if you accept a loan offer from a lender, the lender will typically charge an origination fee or other fees. Lenders are required by law to disclose these fees and other important loan information to you before you accept a loan offer. It is important to fully read through the terms of the agreement prior to signing.`   
-const a5 = `Personal Loans™ provides its service completely free of charge to you. However, if you accept a loan offer from a lender, the lender will typically charge an origination fee or other fees. Lenders are required by law to disclose these fees and other important loan information to you before you accept a loan offer. It is important to fully read through the terms of the agreement prior to signing.`
-const a6 = `Personal Loans™ provides its service completely free of charge to you. However, if you accept a loan offer from a lender, the lender will typically charge an origination fee or other fees. Lenders are required by law to disclose these fees and other important loan information to you before you accept a loan offer. It is important to fully read through the terms of the agreement prior to signing.`
-const a7 = `Personal Loans™ provides its service completely free of charge to you. However, if you accept a loan offer from a lender, the lender will typically charge an origination fee or other fees. Lenders are required by law to disclose these fees and other important loan information to you before you accept a loan offer. It is important to fully read through the terms of the agreement prior to signing.`
+const a4 = `Poor Credit Quick Loans™ provides its service completely free of charge to you. However, if you accept a loan offer from a lender, the lender will typically charge an origination fee or other fees. Lenders are required by law to disclose these fees and other important loan information to you before you accept a loan offer. It is important to fully read through the terms of the agreement prior to signing.`   
+const a5 = `Poor Credit Quick Loans™ provides its service completely free of charge to you. However, if you accept a loan offer from a lender, the lender will typically charge an origination fee or other fees. Lenders are required by law to disclose these fees and other important loan information to you before you accept a loan offer. It is important to fully read through the terms of the agreement prior to signing.`
+const a6 = `Poor Credit Quick Loans™ provides its service completely free of charge to you. However, if you accept a loan offer from a lender, the lender will typically charge an origination fee or other fees. Lenders are required by law to disclose these fees and other important loan information to you before you accept a loan offer. It is important to fully read through the terms of the agreement prior to signing.`
+const a7 = `Poor Credit Quick Loans™ provides its service completely free of charge to you. However, if you accept a loan offer from a lender, the lender will typically charge an origination fee or other fees. Lenders are required by law to disclose these fees and other important loan information to you before you accept a loan offer. It is important to fully read through the terms of the agreement prior to signing.`
   
   return (
     <section id='faq'>

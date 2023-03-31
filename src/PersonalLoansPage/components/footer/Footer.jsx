@@ -20,7 +20,7 @@ const Footer = () => {
         <li><a href="/debtconsolidation">Debt Consolidation</a></li>
         <li><a href="/emergency">Emergency</a></li>
         <li><a href="/homeimprovement">Home Improvement</a></li>
-        <li><a href="/ratesandfees">Online Loans</a></li>
+        <li><a href="/onlineloans">Online Loans</a></li>
         <li><a href="/taxloans">Tax Loans</a></li>
         <li><a href="/paydayloans">Payday Loans</a></li>
       </ul>
@@ -36,9 +36,9 @@ const Footer = () => {
         <li><a href="/addisclosure">Ad Disclosure</a></li>
         <li><a href="/thirdparties">Third Parties</a></li>
         <li><a href="/creditauthorization">Credit Authorization</a></li>
-        <li><a href="/#">California Residents:Do </a></li>
+        {/*<li><a href="/#">California Residents:Do </a></li>
         <li><a href="/#"> Not Sell My Personal</a></li>
-        <li><a href="/#">Information</a></li>
+        <li><a href="/#">Information</a></li>*/}
       </ul>
       </div>
 
@@ -47,19 +47,21 @@ const Footer = () => {
       <ul>
         <li><a href="/about">About Us</a></li>
         <li><a href="/personalloans">How It works</a></li>
-        <li><a href="/#">FAQ</a></li>
+       {/* <li><a href="/#">FAQ</a></li>
         <li><a href="/#">Responsible Lending</a></li>
         <li><a href="/#">Scam Alerts</a></li>
-        <li><a href="/#">Sitemap</a></li>
+        <li><a href="/#">Sitemap</a></li>*/}
       </ul>
       </div>
 
       <div>
         <h2>Contact Information</h2>
       <ul>
-        <li><a href="/#">Addess: lorem ipsum</a></li>
-        <li><a href="/#">Telephone number: 1-800-722-2274</a></li>
-        <li><a href="/#">Email address:support@personalloans.com</a></li>
+        <li><a >Address: 2661 N Pearl St. #431
+Tacoma, WA 98407</a></li>
+        <li><a >Telephone number: 1-800-722-2274</a></li>
+        <li><a >Email address: support@poorcreditquickloans.com</a></li>
+        
         
       </ul>
       </div>

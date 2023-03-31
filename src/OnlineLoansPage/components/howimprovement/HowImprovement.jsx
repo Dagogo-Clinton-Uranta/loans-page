@@ -23,7 +23,7 @@ const EmergencyLoans = () => {
            580, an income above $2,000 per month, and be 
            employed, self-employed, or receiving benefits.
             You can request a loan amount of between $1,000 
-            and $35,000. The amount of your loan, interest rate,
+            and $3,500. The amount of your loan, interest rate,
              and length of the loan will be determined by the 
              lender based on your qualifications.
         </p>

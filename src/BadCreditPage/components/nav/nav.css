@@ -6,8 +6,8 @@ nav {
     position:relative;
     z-index: 2;
 
-    /*another centering style when youdont know the 
-    exact dimensions of the container element */
+    position: fixed !important;
+    top:0 !important; 
 
    left:50%;
     transform: translateX(-50%);
@@ -86,7 +86,7 @@ nav a:hover {
         position: fixed !important;
         top:0 !important; 
        
-        /* width:100% !important;just for the navbar*/
+        /*just for the navbar*/
       }
 
 

@@ -8,6 +8,10 @@
     
 }
 
+#Form7 {
+  padding-top: 8rem !important; 
+}
+
 .Form7__container  > div {
   background: var(--color-bg-white);
   padding:2.4rem 5rem;
