@@ -211,7 +211,10 @@ useEffect(()=>{
           
            else if(result.data.Status === "Sold"){
              //window.open(result.data.Redirect, "_self");
-             window.open("https://topfiveoffers.com/?aid=8494208490233&note=5001&fwd_aid=5001", "_self")
+            // window.open("https://topfiveoffers.com/?aid=8494208490233&note=5001&fwd_aid=5001", "_self")
+             window.open(result.data.Redirect, "_self")
+
+           
            }
          
         
