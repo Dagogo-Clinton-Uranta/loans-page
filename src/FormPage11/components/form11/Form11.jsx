@@ -96,7 +96,7 @@ const payload = {
   campaignId:"1234"   ,
   ip_address: ipAddress  ,
   agent:`${navigator.userAgent}` ,
-  min_price: '20'    ,
+  min_price: '2'    ,
   amount:  sessionStorage.getItem("loanAmount")      ,
   fName:  sessionStorage.getItem("firstName")         ,
   lName:  sessionStorage.getItem("lastName")        ,
@@ -207,7 +207,9 @@ useEffect(()=>{
             console.log("THE LOANS LEAD HAS COME BACK FROM THE DATABASE !...",result.data)
            if( result.data.Messages){ setResponseMessage(result.data.Messages)}
 
-           if( result.data.Status == "Rejected"){ setResponseNoLead(true)}
+           if( result.data.Status == "Rejected"){ setResponseNoLead(true)
+             console.log(result.data)
+          }
           
            else if(result.data.Status === "Sold"){
              //window.open(result.data.Redirect, "_self");
