@@ -4,7 +4,7 @@ import Header from './components/header/Header'
 import Nav from './components/nav/Nav'
 import About from './components/about/About'
 import RangeTable from './components/rangeTable/RangeTable'
-//import Experience from './components/experience/Experience'
+import Experience from './components/experience/Experience'
 
 import Footer from './components/footer/Footer'
 import Features from './components/features/Features'
