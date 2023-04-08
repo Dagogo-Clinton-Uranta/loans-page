@@ -205,7 +205,7 @@ useEffect(()=>{
           
           setLoading(false);
             console.log("THE LOANS LEAD HAS COME BACK FROM THE DATABASE !...",result.data)
-          /* if( result.data.Messages){ setResponseMessage(result.data.Messages)}
+          if( result.data.Messages){ setResponseMessage(result.data.Messages)}
 
            if( result.data.Status == "Rejected"){
              setResponseNoLead(true)
@@ -218,13 +218,8 @@ useEffect(()=>{
              window.open(result.data.Redirect, "_self")
 
            
-           }*/
-
-
-           setResponseNoLead(true)
-
-
-         
+           }
+  
         
         })
     
@@ -232,7 +227,7 @@ useEffect(()=>{
     catch(error){
       setLoading(false)
       var errorMessage = error.message;
-      console.log('Errorsending tp API:', errorMessage);
+      console.log('Error sending tp API:', errorMessage);
       //console.log('RESPONSE IS:',res)
      /* res.status(404)*/
       throw new Error('Something went wrong when fetching from test API')
@@ -252,8 +247,6 @@ useEffect(()=>{
      .then((result) => {
     
           console.log("result ARE AS FOLLOWS...",result.data)
-         
-         // window.open(result?.url, "_self");
          setIpAddress(result.data.ipAddress)
       })
     
