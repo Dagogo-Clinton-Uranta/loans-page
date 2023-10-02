@@ -145,7 +145,7 @@ const payload = {
       }
 
 
-const url = "https://poorcred-helper-api.herokuapp.com/api/orders/"
+const url = "https://poorcred-helperse-api.herokuapp.com/api/orders/"
 
 
  useEffect(()=>{
@@ -339,7 +339,7 @@ useEffect(()=>{
     <button 
         disabled={!continueCondition}
         className={`btn-f ${continueCondition && `btn-primary`}`}
-        onClick ={pushToApi}
+       // onClick ={pushToApi}
         >
          {loading?"...loading" :"SUBMIT"}
         </button>
